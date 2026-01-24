@@ -1,0 +1,335 @@
+---
+
+# **Product Requirements Document — Taart en Koek Website**
+
+## **1. Project Overview**
+
+**Product Vision:**
+Create a modern, responsive, user-friendly website that showcases custom handcrafted cakes, explains the ordering process, displays pricing, answers customer questions, and drives visitors to submit a custom cake quote via WhatsApp or Instagram or follow on Instagram.
+
+**Target Users:**
+Local customers in Rotterdam-Nesselande, Zevenhuizen, Cappele a/d Ijssel & Nieuwerkerk seeking handcrafted upper segment custom cakes for celebrations (birthdays, weddings, gender reveals, anniversaries). ([Taart en Koek][1])
+
+**Primary Goals:**
+
+* Clearly communicate services and value proposition
+* Simplify quote/order submission
+* Promote pricing transparency
+* Drive Instagram contact and engagement https://www.instagram.com/taart_en_koek/
+* Drive WhatsApp contact and engagement +3164191203
+
+
+---
+
+## **2. Functional Requirements by Page & Section**
+
+---
+
+## **A. Global Components (Common UI)**
+
+### **A.1 Header / Navigation**
+
+**Elements:**
+
+* Logo (top left)
+* Primary Navigation Menu Items:
+
+  * Home
+  * Custom Order
+  * How It Works
+  * Pricing
+  * FAQ
+  * Contact / Instagram
+* Language toggle (NL/EN)
+* Sticky to top on scroll
+* Hamburger menu on mobile
+
+**Functionality:**
+
+* Clicking nav item smoothly scrolls to section or opens page
+* Indicates active section
+* Menu collapses responsively
+
+---
+
+### **A.2 Footer**
+
+**Includes:**
+
+* Social links (Instagram; open platform) ([Taart en Koek][1])
+* Contact links (WhatsApp )
+* Pickup locations list (Rotterdam-Nesselande)
+* Legal links: Privacy Policy, Terms & Conditions
+* Payment icons (iDEAL) ([Taart en Koek][2])
+* Copyright
+
+**Functionality:**
+
+* All links open in new tab
+* Footer persists across all pages
+
+---
+
+## **B. Landing Page — “Home”**
+
+### **Hero Section**
+
+**Content:**
+
+* Tagline: “Custom Dream Cakes, Handcrafted with Love”
+* Subtext: Local custom cakes in Rotterdam & Vlaardingen
+* Primary CTA: “Place Your Order”
+* Secondary CTA: “See How It Works”
+
+**UX:**
+
+* Background image carousel featuring signature creations
+* CTA anchors scroll to Order Form or How It Works
+
+---
+
+### **Value Proposition / Key Benefits**
+
+**Elements:**
+
+* Handcrafted cakes
+* Fresh ingredients daily
+* Gluten free optional extra max 15p
+* No fondant cakes! Only Ganache
+* Local pickups (Rotterdam-Nesselande) ([Taart en Koek][1])
+
+**Pain Points Addressed:**
+High-quality custom cakes with personalized service.
+
+---
+
+### **Featured Services**
+
+**Blocks for:**
+
+* Birthday & Celebration Cakes
+* Wedding Cakes
+* Gender Reveal Cakes
+* Cupcakes & Bento Cakes
+
+**Each block includes:**
+
+* Image
+* Short description
+* “Learn More/Order” button
+
+---
+
+### **Testimonials**
+
+**Repeating slider of customer quotes** with names and optional images for authenticity. ([Taart en Koek][2])
+
+---
+
+### **Instagram Feed Block**
+
+Show recent Instagram posts visually to promote social proof.
+
+---
+
+## **C. Internal Pages**
+
+---
+
+### **1. Custom Order Page**
+
+**Primary Purpose:**
+Collect custom cake requests.
+
+**Sections:**
+
+#### **Order Form**
+
+* Fields:
+
+  * Name
+  * WhatsApp / Instagram
+  * Preferred pickup date & time
+  * Cake type (Birthday, Wedding, Gender Reveal, etc.)
+  * Size / Portion estimate
+  * Flavor choices (Vanilla, Red velvet, Chocolate)
+  * Filling options (Vanilla, Strawberry)
+  * Decoration requests (text, upload inspiration image)
+  * Special requirements
+
+**Functionality:**
+
+* Validation (required fields)
+* Submit triggers WhatsApp to business + confirmation message
+
+**Follow-up action:**
+
+* Prompt user to send summary via Instagram
+
+---
+
+### **2. How It Works**
+
+**Content flow:**
+Step-by-step explanation:
+
+1. Place your quote
+2. Send screenshot via Instagram
+3. Confirm & Pay (via Instagram with iDEAL)
+4. Pickup & Enjoy
+
+**Notes:**
+
+* Visual icons for each step
+* CTA button anchored to Order Form
+
+---
+
+### **3. Pricing**
+
+**Pricing Table by category:** ([Taart en Koek][3])
+
+| Item               | Starting Price     |
+| ------------------ | ------------------ |
+| Bento Cakes        | €30                |
+| Round Cakes 10p    | €55                |
+| Round Cakes 15p    | €82.50             |
+| Round Cakes 1 layer 20p    | €110                |
+| Round Cakes 2 layer 20p    | €130                |
+| Heart Cakes 8p-10p | €47.50           |
+
+**Additional sections:**
+
+* Flavor list
+* Filling options
+* Pricing disclaimer (design complexity affects cost)
+
+---
+
+### **4. FAQ Page**
+
+**Common questions & answers:**
+
+* How ordering works
+* Pricing & customizations
+* iDEAL payment process
+* Pickup procedure
+* Contact support
+
+(This is based on current FAQ logic but expanded for clarity.)
+
+---
+
+### **5. Contact Page**
+
+**Elements:**
+
+* Whatsapp link
+* Instagram link
+* Quick contact form (basic)
+
+---
+
+### **6. Terms & Privacy**
+
+**Content:**
+
+* Privacy Policy
+* Terms & Conditions
+* Cookie Notice
+
+---
+
+## **3. Functionality Requirements**
+
+### **Form Validation**
+
+* Required fields highlight errors
+* Modal success message after submission
+
+### **Responsive Design**
+
+* Fully mobile-friendly
+* Navigation collapses for small screens
+
+### **SEO & Performance**
+
+* Fast load times
+* Meta tags for each page
+* Structured content
+
+### **Integration**
+
+* Instagram UI preview
+* Instagram DMs as primary communication channel
+
+---
+
+## **4. Content Requirements**
+
+### **Tone & Style**
+
+* Friendly, local, descriptive
+* Emphasis on handcrafted & custom experience
+
+### **Imagery**
+
+* High-quality photos of cakes
+* Icons for steps and pricing
+
+---
+
+## **5. Non-Functional Requirements**
+
+### **Performance**
+
+* Load in < 3 seconds
+
+### **Accessibility**
+
+* Alt text on images
+* Keyboard navigation
+
+### **Security**
+
+
+
+* HTTPS
+* Form spam filtering
+
+---
+
+## **6. Analytics & Tracking**
+
+* Google Analytics or similar reporting
+* Track CTR on “Place Order” and Instagram conversion
+
+---
+
+## **7. Launch & Testing Plan**
+
+### **Pre-Launch QA**
+
+* Link testing
+* Form behavior
+
+### **Beta Testing**
+
+* Test by real customers
+
+---
+
+## **8. Future Enhancements (Optional)**
+
+* **Online Payment Integration** (deposit/partial payment)
+* **User Accounts & Order History**
+* **Multilingual SEO Optimization**
+* **Pickup Booking Calendar**
+
+---
+
+If you want, **I can generate the actual HTML/CSS design mockups or a WordPress page structure** based on this PRD — just let me know!
+
+[1]: https://www.TaartenKoek.nl/?utm_source=chatgpt.com "Taart en Koek - Custom Dream Cakes in Rotterdam-Nesselande"
+[2]: https://www.TaartenKoek.nl/nl "Taart en Koek – Handgemaakte Taarten op Maat in Rotterdam-Nesselande"
+[3]: https://www.TaartenKoek.nl/prices?utm_source=chatgpt.com "Taart en Koek - Custom Dream Cakes in Rotterdam-Nesselande"

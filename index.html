@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taart en Koek - Handgemaakte Droomtaarten in Rotterdam</title>
+    <meta name="description" content="Handgemaakte taarten op maat in Rotterdam-Nesselande. Verjaardag, bruiloft en feesttaarten met ganache glazuur. Bestel via WhatsApp of Instagram.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;500;600&family=Lato:wght@300;400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <style>
+        :root {
+            /* Brand Colors */
+            --blush-pink: #FFE5EC;
+            --hot-pink: #E91E8C;
+            --cream: #FAF8F5;
+            --deep-pink: #F06292;
+            --gold: #C9A86A;
+            --warm-taupe: #B8976D;
+            --soft-gray: #8B7E74;
+            --chocolate-brown: #4A3428;
+            --charcoal: #3D3D3D;
+            
+            /* Typography */
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-heading: 'Montserrat', Arial, sans-serif;
+            --font-body: 'Lato', Georgia, sans-serif;
+            --font-accent: 'Great Vibes', cursive;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            color: var(--chocolate-brown);
+            background: var(--cream);
+            overflow-x: hidden;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(250, 248, 245, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(74, 52, 40, 0.05);
+        }
+        
+        nav.scrolled {
+            padding: 0.75rem 0;
+            box-shadow: 0 2px 12px rgba(74, 52, 40, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--hot-pink), var(--deep-pink));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover .logo-icon {
+            transform: scale(1.1) rotate(10deg);
+        }
+        
+        .logo-text {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--chocolate-brown);
+        }
+        
+        .logo-text span {
+            color: var(--hot-pink);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            font-family: var(--font-heading);
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--chocolate-brown);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            letter-spacing: 0.5px;
+            position: relative;
+            padding-bottom: 4px;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--hot-pink);
+            transition: width 0.4s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--hot-pink);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-cta {
+            background: var(--hot-pink);
+            color: white !important;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600 !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .nav-cta-spoed {
+            background: var(--gold);
+            color: white !important;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600 !important;
+            transition: all 0.3s ease !important;
+        }
+        
+        .nav-cta:hover {
+            background: var(--deep-pink);
+            transform: translateY(-2px);
+        }
+        
+        .nav-cta::after {
+            display: none !important;
+        }
+        
+        /* Mobile Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+        
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background: var(--hot-pink);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+        
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(250, 248, 245, 0.98);
+            z-index: 999;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            display: flex;
+            opacity: 1;
+        }
+        
+        .mobile-menu a {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--chocolate-brown);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .mobile-menu a:hover {
+            color: var(--hot-pink);
+            transform: scale(1.1);
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 70px;
+            min-height: 95vh;
+            background: linear-gradient(135deg, var(--blush-pink) 0%, var(--cream) 50%, rgba(201, 168, 106, 0.1) 100%);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle, var(--gold) 1.5px, transparent 1.5px);
+            background-size: 40px 40px;
+            opacity: 0.2;
+            animation: float 25s ease-in-out infinite;
+        }
+        
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            right: -20%;
+            width: 80%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(233, 30, 140, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(2deg); }
+        }
+        
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            animation: fadeInLeft 1s ease-out;
+        }
+        
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 15px rgba(74, 52, 40, 0.08);
+            font-size: 0.9rem;
+            color: var(--chocolate-brown);
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        
+        .hero-badge i {
+            color: var(--gold);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-accent {
+            font-family: var(--font-accent);
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: 4.2rem;
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--chocolate-brown);
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero h1 span {
+            color: var(--hot-pink);
+            position: relative;
+        }
+        
+        .hero h1 span::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: var(--gold);
+            opacity: 0.3;
+            z-index: -1;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--charcoal);
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+            max-width: 90%;
+        }
+        
+        .cta-group {
+            display: flex;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .btn {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            letter-spacing: 0.3px;
+        }
+        
+        .btn-primary {
+            background: var(--hot-pink);
+            color: white;
+            box-shadow: 0 4px 20px rgba(233, 30, 140, 0.35);
+        }
+        
+        .btn-primary:hover {
+            background: var(--deep-pink);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(233, 30, 140, 0.4);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: var(--chocolate-brown);
+            border: 2px solid var(--warm-taupe);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--gold);
+            color: white;
+            border-color: var(--gold);
+            transform: translateY(-3px);
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+        
+        .stat {
+            text-align: left;
+        }
+        
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--hot-pink);
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--soft-gray);
+            margin-top: 0.25rem;
+        }
+        
+        .hero-images {
+            position: relative;
+            animation: fadeInRight 1s ease-out 0.3s both;
+            margin-left: 122px;
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .hero-image-main {
+            width: 100%;
+            max-width: 520px;
+            height: auto;
+            border-radius: 30px;
+            box-shadow: 0 25px 60px rgba(74, 52, 40, 0.2);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-image-float {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(74, 52, 40, 0.25);
+            border: 4px solid white;
+        }
+        
+        .hero-image-float.top {
+            top: -30px;
+            right: -77px;
+            animation: floatImage 5s ease-in-out infinite;
+            z-index:3;
+        }
+        
+        .hero-image-float.bottom {
+            bottom: 40px;
+            left: -156px;
+            animation: floatImage 5s ease-in-out infinite 1s;
+            z-index: 100;
+        }
+        
+        @keyframes floatImage {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+        
+        /* Section Styling */
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+        
+        .section-accent {
+            font-family: var(--font-accent);
+            font-size: 2rem;
+            color: var(--gold);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            color: var(--chocolate-brown);
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.15rem;
+            color: var(--charcoal);
+            line-height: 1.7;
+        }
+        
+        /* Value Propositions */
+        .value-props {
+            padding: 7rem 2rem;
+            background: white;
+            position: relative;
+        }
+        
+        .value-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2.5rem;
+        }
+        
+        .value-card {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--cream);
+            border-radius: 24px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--hot-pink), var(--gold));
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(74, 52, 40, 0.12);
+        }
+        
+        .value-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, var(--blush-pink), white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--hot-pink);
+            transition: all 0.4s ease;
+        }
+        
+        .value-card:hover .value-icon {
+            transform: scale(1.1) rotate(10deg);
+            background: linear-gradient(135deg, var(--hot-pink), var(--deep-pink));
+            color: white;
+        }
+        
+        .value-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            color: var(--chocolate-brown);
+            margin-bottom: 1rem;
+        }
+        
+        .value-card p {
+            color: var(--charcoal);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            padding: 7rem 2rem;
+            background: linear-gradient(180deg, var(--cream) 0%, var(--blush-pink) 100%);
+            position: relative;
+        }
+        
+        .gallery::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle, var(--gold) 1px, transparent 1px);
+            background-size: 50px 50px;
+            opacity: 0.12;
+            pointer-events: none;
+        }
+        
+        .gallery-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 280px);
+            gap: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+        
+        .gallery-item:nth-child(1) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(74, 52, 40, 0.25);
+            z-index: 2;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, transparent 80%, rgba(74, 52, 40, 0.9) 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.5rem;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        
+        .gallery-overlay h4 {
+            font-family: var(--font-display);
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .gallery-overlay span {
+            color: var(--gold);
+            font-size: 0.9rem;
+        }
+        
+        .gallery-cta {
+            text-align: center;
+            margin-top: 3rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 7rem 2rem;
+            background: white;
+        }
+        
+        .services-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: var(--cream);
+            border-radius: 24px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        
+        .service-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            border: 2px solid transparent;
+            background: linear-gradient(135deg, var(--hot-pink), var(--gold)) border-box;
+            -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 25px 50px rgba(233, 30, 140, 0.15);
+        }
+        
+        .service-card:hover::after {
+            opacity: 1;
+        }
+        
+        .service-image-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-image {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .service-card:hover .service-image {
+            transform: scale(1.08);
+        }
+        
+        .service-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: var(--gold);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+        
+        .service-content {
+            padding: 2rem;
+        }
+        
+        .service-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--chocolate-brown);
+            margin-bottom: 0.75rem;
+        }
+        
+        .service-card p {
+            color: var(--charcoal);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .service-link {
+            color: var(--hot-pink);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s ease;
+            font-size: 0.95rem;
+        }
+        
+        .service-link:hover {
+            gap: 0.9rem;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            padding: 7rem 2rem;
+            background: linear-gradient(135deg, var(--blush-pink) 0%, var(--cream) 100%);
+            position: relative;
+        }
+        
+        .pricing::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle, var(--gold) 1px, transparent 1px);
+            background-size: 60px 60px;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+        
+        .pricing-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .pricing-table {
+            background: white;
+            border-radius: 30px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(74, 52, 40, 0.1);
+        }
+        
+        .pricing-header {
+            text-align: center;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--blush-pink);
+            margin-bottom: 2rem;
+        }
+        
+        .pricing-header h3 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--chocolate-brown);
+            margin-bottom: 0.5rem;
+        }
+        
+        .pricing-header p {
+            color: var(--soft-gray);
+        }
+        
+        .pricing-row {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            padding: 1.25rem 1.5rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .pricing-row:hover {
+            background: var(--blush-pink);
+        }
+        
+        .pricing-item {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            color: var(--chocolate-brown);
+        }
+        
+        .pricing-item small {
+            display: block;
+            color: var(--soft-gray);
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+        
+        .pricing-price {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--hot-pink);
+        }
+        
+        .pricing-note {
+            margin-top: 2rem;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(135deg, var(--blush-pink), rgba(201, 168, 106, 0.15));
+            border-radius: 16px;
+            border-left: 4px solid var(--gold);
+        }
+        
+        .pricing-note p {
+            color: var(--chocolate-brown);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+        
+        .pricing-note strong {
+            color: var(--hot-pink);
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 7rem 2rem;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonials::before {
+            content: '"';
+            font-family: var(--font-display);
+            font-size: 30rem;
+            color: var(--blush-pink);
+            position: absolute;
+            top: -8rem;
+            left: 5%;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+        
+        .testimonial-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial {
+            background: var(--cream);
+            padding: 2.5rem;
+            border-radius: 24px;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        
+        .testimonial:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(74, 52, 40, 0.1);
+        }
+        
+        .testimonial-stars {
+            color: var(--gold);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+        
+        .testimonial-quote {
+            font-size: 1.05rem;
+            color: var(--charcoal);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--hot-pink), var(--blush-pink));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .author-info h4 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--chocolate-brown);
+            font-size: 1rem;
+        }
+        
+        .author-info span {
+            color: var(--soft-gray);
+            font-size: 0.85rem;
+        }
+        
+        /* Contact CTA */
+        .contact-cta {
+            padding: 7rem 2rem;
+            background: linear-gradient(135deg, var(--hot-pink), var(--deep-pink));
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+            pointer-events: none;
+        }
+        
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-content h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-content > p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-whatsapp {
+            background: white;
+            color: var(--hot-pink);
+            font-size: 1rem;
+        }
+        
+        .btn-whatsapp:hover {
+            background: var(--gold);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .btn-instagram {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            font-size: 1rem;
+        }
+        
+        .btn-instagram:hover {
+            background: white;
+            color: var(--hot-pink);
+            transform: translateY(-3px);
+        }
+        
+        .btn-rush {
+            background: linear-gradient(135deg, var(--gold), var(--warm-taupe));
+            color: white;
+            font-size: 1rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-rush::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .btn-rush:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+        
+        .btn-rush:hover::before {
+            left: 100%;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--chocolate-brown);
+            color: var(--cream);
+            padding: 5rem 2rem 2rem;
+        }
+        
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-brand p {
+            margin-top: 1rem;
+            color: var(--warm-taupe);
+            line-height: 1.7;
+            max-width: 300px;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .footer-social a {
+            width: 45px;
+            height: 45px;
+            background: rgba(201, 168, 106, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-social a:hover {
+            background: var(--gold);
+            color: var(--chocolate-brown);
+            transform: translateY(-3px);
+        }
+        
+        .footer-section h3 {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: var(--cream);
+            text-decoration: none;
+            line-height: 2.2;
+            display: block;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        
+        .footer-section a:hover {
+            color: var(--gold);
+            padding-left: 5px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(201, 168, 106, 0.2);
+            color: var(--soft-gray);
+            font-size: 0.9rem;
+        }
+        
+        .footer-bottom a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+        
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(74, 52, 40, 0.95);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .lightbox.active {
+            display: flex;
+            opacity: 1;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90vh;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 85vh;
+            object-fit: contain;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: var(--chocolate-brown);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .lightbox-close:hover {
+            background: var(--hot-pink);
+            color: white;
+            transform: rotate(90deg);
+        }
+        
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 250px);
+            }
+            
+            .gallery-item:nth-child(1) {
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 3.2rem;
+            }
+            
+            .hero-subtitle {
+                max-width: 100%;
+            }
+            
+            .cta-group {
+                justify-content: center;
+            }
+            
+            .hero-stats {
+                justify-content: center;
+            }
+            
+            .hero-images {
+                max-width: 450px;
+                margin: 0 auto;
+            }
+            
+            .hero-image-float {
+                display: none;
+            }
+            
+            .value-grid,
+            .services-grid,
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            .hero {
+                margin-top: 60px;
+                min-height: auto;
+                padding: 4rem 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-accent {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .value-grid,
+            .services-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+            }
+            
+            .gallery-item:nth-child(1) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+            
+            .pricing-table {
+                padding: 2rem 1.5rem;
+            }
+            
+            .contact-content h2 {
+                font-size: 2.2rem;
+            }
+            
+            .contact-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .footer-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .footer-brand p {
+                max-width: 100%;
+            }
+            
+            .footer-social {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="ph-fill ph-cake"></i>
+                </div>
+                <span class="logo-text">Taart <span>&</span> Koek</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Galerij</a></li>
+                <li><a href="#services">Thema taarten</a></li>
+                <li><a href="#pricing">Prijzen</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <a href="https://wa.me/31634191203?text=Normale bestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" style="background:var(--hot-pink)" class="nav-cta btn-rush" target="_blank">
+                    <i class="ph-fill ph-lightning"></i>
+                    Bestellen
+                </a>
+                <a href="https://wa.me/31634191203?text=Spoedbestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" class="nav-cta btn-rush" target="_blank">
+                    <i class="ph-fill ph-lightning"></i>
+                    Help spoedgeval
+                </a>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#gallery">Galerij</a>
+        <a href="#services">Taarten</a>
+        <a href="#pricing">Prijzen</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Bestellen</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="ph-fill ph-map-pin"></i>
+                    Rotterdam-Nesselande
+                </div>
+                <span class="hero-accent">Met Liefde Handgemaakt</span>
+                <h1>Droomtaarten <span>Op Maat</span></h1>
+                <p class="hero-subtitle">Handgemaakte taarten voor jouw speciale momenten. Dagelijks verse ingrediënten, geen fondant—alleen heerlijke ganache. Van verjaardag tot bruiloft, elke taart is een kunstwerk.</p>
+                <div class="cta-group">
+                    <a href="https://wa.me/31634191203" class="btn btn-primary" target="_blank">
+                        <i class="ph-fill ph-whatsapp-logo"></i>
+                        Bestel Via WhatsApp
+                    </a>
+                    <a href="#gallery" class="btn btn-secondary">
+                        <i class="ph ph-images"></i>
+                        Bekijk Galerij
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Taarten Gemaakt</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5.0</div>
+                        <div class="stat-label">★ Mijn man's rating</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Handgemaakt</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-images">
+                <img src="images/theme-cake-baby-shower-girl.jpgirl.jpg" alt="Elegante verjaardagstaart met gouden en roze decoraties" class="hero-image-main">
+                <img src="images/heart-cake.jpegke.jpeg" alt="Babyshower taart" class="hero-image-float top">
+                <img src="images/theme-cake-paw-patrol.jpgrol.jpg" alt="Paw Patrol kindertaart" class="hero-image-float bottom">
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="value-props">
+        <div class="section-header">
+            <span class="section-accent">Waarom Kiezen Voor Ons</span>
+            <h2 class="section-title">Vier Met Zoetigheid</h2>
+            <p class="section-subtitle">Elke taart wordt met passie gemaakt, precies zoals jij hem wilt</p>
+        </div>
+        <div class="value-grid">
+            <div class="value-card fade-in">
+                <div class="value-icon">
+                    <i class="ph-fill ph-chef-hat"></i>
+                </div>
+                <h3>Dagelijks Vers Gebakken</h3>
+                <p>Elke taart wordt op de dag van afhalen bereid. Geen dagen oude baksels, alleen verse kwaliteit.</p>
+            </div>
+            <div class="value-card fade-in">
+                <div class="value-icon">
+                    <i class="ph-fill ph-sparkle"></i>
+                </div>
+                <h3>Geen Fondant, Alleen Ganache</h3>
+                <p>Gladde, heerlijke ganache glazuur voor de beste smaak en textuur. Fondant is bij ons verleden tijd.</p>
+            </div>
+            <div class="value-card fade-in">
+                <div class="value-icon">
+                    <i class="ph-fill ph-heart"></i>
+                </div>
+                <h3>Persoonlijk Ontwerp</h3>
+                <p>Deel je idee en wij maken het werkelijkheid. Van thema's tot kleuren, alles kan op maat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="section-header">
+            <span class="section-accent">Onze Creaties</span>
+            <h2 class="section-title">Galerij</h2>
+            <p class="section-subtitle">Bekijk onze meest recente taarten en laat je inspireren</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in" onclick="openLightbox('images/Photoroom_20251214_110927.JPG')">
+                <img src="images/theme-cake-paw-patrol.jpgrol.jpg" alt="Paw Patrol taart">
+                <div class="gallery-overlay">
+                    <h4>Paw Patrol</h4>
+                    <span>Thema Taart</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-in" onclick="openLightbox('images/Photoroom_20251019_142706.JPG')">
+                <img src="images/theme-cake-baby-shower-girl.jpgirl.jpg" alt="Babyshower taart">
+                <div class="gallery-overlay">
+                    <h4>Babyshower</h4>
+                    <span>Gender Reveal</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-in" onclick="openLightbox('images/Photoroom_20260108_140945.JPG')">
+                <img src="images/theme-cake-pokemon.jpgmon.jpg" alt="Pokemon taart">
+                <div class="gallery-overlay">
+                    <h4>Pokemon</h4>
+                    <span>Kindertaart</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-in" onclick="openLightbox('images/IMG_2743.jpeg')">
+                <img src="images/mile-stone-80-woman.jpegan.jpeg" alt="80ste verjaardag taart">
+                <div class="gallery-overlay">
+                    <h4>Bloementaart</h4>
+                    <span>Jubileum</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-in" onclick="openLightbox('images/Photoroom_20260108_140050.JPG')">
+                <img src="images/mile-stone-baby.jpgaby.jpg" alt="Oh Baby taart">
+                <div class="gallery-overlay">
+                    <h4>Oh Baby</h4>
+                    <span>Babyshower</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-in" onclick="openLightbox('images/Photoroom_20251026_171313.JPG')">
+                <img src="images/theme-cake-nijntje.jpgtje.jpg" alt="Nijntje taart">
+                <div class="gallery-overlay">
+                    <h4>Nijntje</h4>
+                    <span>1e Verjaardag</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-in" onclick="openLightbox('images/IMG_2391.jpeg')">
+                <img src="images/mile-stone-16-girl.jpgirl.jpg" alt="Elegante verjaardagstaart">
+                <div class="gallery-overlay">
+                    <h4>Sweet 16 Taart</h4>
+                    <span>Verjaardag</span>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-cta">
+            <a href="https://www.instagram.com/taart_en_koek/" class="btn btn-primary" target="_blank">
+                <i class="ph-fill ph-instagram-logo"></i>
+                Meer Op Instagram
+            </a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <span class="section-accent">Ons Aanbod</span>
+            <h2 class="section-title">Taarten Voor Elk Moment</h2>
+            <p class="section-subtitle">Van intieme feestjes tot grote vieringen</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-image-wrapper">
+                    <img src="images/mile-stone-16-girl.jpgirl.jpg" class="service-image" alt="Verjaardagstaart">
+                    <span class="service-badge">Populair</span>
+                </div>
+                <div class="service-content">
+                    <h3>Verjaardagstaarten</h3>
+                    <p>Vier in stijl met een taart op maat. Elk thema, elke leeftijd—wij maken jouw droom waar.</p>
+                    <a href="https://www.instagram.com/taart_en_koek/" class="service-link" target="_blank">
+                        Bekijk voorbeelden <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-image-wrapper">
+                    <img src="images/theme-cake-baby-shower-girl.jpgirl.jpg" class="service-image" alt="Babyshower taart">
+                    <span class="service-badge">Trending</span>
+                </div>
+                <div class="service-content">
+                    <h3>Baby & Gender Reveal</h3>
+                    <p>Maak de aankondiging onvergetelijk met een prachtige, gepersonaliseerde taart.</p>
+                    <a href="https://www.instagram.com/taart_en_koek/" class="service-link" target="_blank">
+                        Bekijk voorbeelden <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-image-wrapper">
+                    <img src="images/theme-cake-nijntje.jpgtje.jpg" class="service-image" alt="Thema taart">
+                    <span class="service-badge">Kids Favoriet</span>
+                </div>
+                <div class="service-content">
+                    <h3>Thema & Karakter</h3>
+                    <p>Paw Patrol, Pokemon, Frozen of Nijntje—hun favoriete karakters tot leven gebracht.</p>
+                    <a href="https://www.instagram.com/taart_en_koek/" class="service-link" target="_blank">
+                        Bekijk voorbeelden <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="section-header">
+            <span class="section-accent">Transparante Prijzen</span>
+            <h2 class="section-title">Startprijzen</h2>
+            <p class="section-subtitle">Kwaliteit hoeft niet duur te zijn</p>
+        </div>
+        <div class="pricing-container">
+            <div class="pricing-table">
+                <div class="pricing-header">
+                    <h3>Onze Taarten</h3>
+                    <p>Inclusief premium ingrediënten & basis decoratie</p>
+                </div>
+                <div class="pricing-row">
+                    <span class="pricing-item">Bento Taarten<small>Individuele portie</small></span>
+                    <span class="pricing-price">€30</span>
+                </div>
+                <div class="pricing-row">
+                    <span class="pricing-item">Ronde Taart<small>10 personen</small></span>
+                    <span class="pricing-price">€55</span>
+                </div>
+                <div class="pricing-row">
+                    <span class="pricing-item">Ronde Taart<small>15 personen</small></span>
+                    <span class="pricing-price">€82,50</span>
+                </div>
+                <div class="pricing-row">
+                    <span class="pricing-item">Ronde Taart - 1 Laag<small>20 personen</small></span>
+                    <span class="pricing-price">€110</span>
+                </div>
+                <div class="pricing-row">
+                    <span class="pricing-item">Ronde Taart - 2 Lagen<small>20 personen</small></span>
+                    <span class="pricing-price">€130</span>
+                </div>
+                <div class="pricing-row">
+                    <span class="pricing-item">Hart Taart<small>8-10 personen</small></span>
+                    <span class="pricing-price">€47,50</span>
+                </div>
+                <div class="pricing-note">
+                    <p><strong>Smaken:</strong> Vanille, Red Velvet, Chocolade</p>
+                    <p><strong>Vulling:</strong> Vanille, Aardbei</p>
+                    <p style="margin-top: 0.75rem;"><strong>Tip:</strong> Complexe ontwerpen kunnen de prijs beïnvloeden. Glutenvrij mogelijk (+15%)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <span class="section-accent">Tevreden Klanten</span>
+            <h2 class="section-title">Wat Klanten Zeggen</h2>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">De taart was absoluut prachtig en smaakte nog beter dan het eruitzag! Perfect voor de verjaardag van onze dochter. Echte aanrader!</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">S</div>
+                    <div class="author-info">
+                        <h4>Sophie</h4>
+                        <span>Verjaardagstaart</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">Onze gender reveal taart was een groot succes! Iedereen was verbaasd over hoe mooi én lekker de taart was. Zeker voor herhaling vatbaar.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">L</div>
+                    <div class="author-info">
+                        <h4>Alize</h4>
+                        <span>Gender Reveal</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">De Paw Patrol taart voor mijn zoontje was fantastisch! De details waren ongelooflijk. Hij was zo blij. Bedankt voor deze magische taart!</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">M</div>
+                    <div class="author-info">
+                        <h4>Marcus</h4>
+                        <span>Thema Taart</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta" id="contact">
+        <div class="contact-content">
+            <h2>Een dierbare vergeten! Alle bakker's vol?</h2>
+            <p>Druk snel op de spoed knop.</p>
+            <div class="contact-buttons">
+                <a href="https://wa.me/31634191203" class="btn btn-whatsapp" target="_blank">
+                    <i class="ph-fill ph-whatsapp-logo"></i>
+                    Bestel Via WhatsApp
+                </a>
+                <a href="https://wa.me/31634191203?text=Spoedbestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" class="btn btn-rush" target="_blank">
+                    <i class="ph-fill ph-lightning"></i>
+                    Help spoedgeval
+                </a>
+                <a href="https://www.instagram.com/taart_en_koek/" class="btn btn-instagram" target="_blank">
+                    <i class="ph-fill ph-instagram-logo"></i>
+                    Volg Op Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo" style="margin-bottom: 0.5rem;">
+                    <div class="logo-icon" style="background: var(--gold);">
+                        <i class="ph-fill ph-cake"></i>
+                    </div>
+                    <span class="logo-text" style="color: var(--cream);">Taart <span style="color: var(--gold);">&</span> Koek</span>
+                </a>
+                <p>Handgemaakte taarten op maat voor jouw speciale momenten. Elke taart is een kunstwerk, gemaakt met liefde en passie.</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/31634191203" target="_blank"><i class="ph-fill ph-whatsapp-logo"></i></a>
+                    <a href="https://www.instagram.com/taart_en_koek/" target="_blank"><i class="ph-fill ph-instagram-logo"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Navigatie</h3>
+                <a href="#home">Home</a>
+                <a href="#gallery">Galerij</a>
+                <a href="#services">Taarten</a>
+                <a href="#pricing">Prijzen</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Ophaallocatie</h3>
+                <p>Rotterdam-Nesselande</p>
+                <p style="color: var(--soft-gray); font-size: 0.85rem;">Exacte adres na bestelling</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <a href="https://www.instagram.com/taart_en_koek/" target="_blank">@taart_en_koek</a>
+                <a href="https://wa.me/31634191203" target="_blank"><i class="ph-fill ph-whatsapp-logo"></i>taart en koek</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Taart en Koek. Alle rechten voorbehouden. Made with <span style="color: var(--hot-pink);">♥</span> in Rotterdam-Nesselande</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">
+            <i class="ph ph-x"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="Taart afbeelding" id="lightboxImage">
+        </div>
+    </div>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+        });
+        
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Lightbox
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightboxImage');
+            lightboxImage.src = src;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        // Close lightbox on backdrop click
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) {
+                closeLightbox();
+            }
+        });
+        
+        // Close lightbox on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+</body>
+</html>

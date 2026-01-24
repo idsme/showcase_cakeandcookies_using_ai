@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taart en Koek - Handgemaakte Droomtaarten in Rotterdam</title>
+    <meta name="description" content="Handgemaakte taarten op maat in Rotterdam-Nesselande. Verjaardag, bruiloft en feesttaarten met ganache glazuur. Bestel via WhatsApp of Instagram.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;500;600&family=Lato:wght@300;400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <style>
+        :root {
+            /* Brand Colors */
+            --blush-pink: #FFE5EC;
+            --hot-pink: #E91E8C;
+            --cream: #FAF8F5;
+            --deep-pink: #F06292;
+            --gold: #C9A86A;
+            --warm-taupe: #B8976D;
+            --soft-gray: #8B7E74;
+            --chocolate-brown: #4A3428;
+            --charcoal: #3D3D3D;
+            
+            /* Typography */
+            --font-display: 'Playfair Display', Georgia, serif;
+            --font-heading: 'Montserrat', Arial, sans-serif;
+            --font-body: 'Lato', Georgia, sans-serif;
+            --font-accent: 'Great Vibes', cursive;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            color: var(--chocolate-brown);
+            background: var(--cream);
+            overflow-x: hidden;
+        }
+        
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(250, 248, 245, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1.5rem 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(74, 52, 40, 0.05);
+        }
+        
+        nav.scrolled {
+            padding: 1rem 0;
+            box-shadow: 0 2px 12px rgba(74, 52, 40, 0.1);
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover img {
+            transform: scale(1.05);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            font-family: var(--font-heading);
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--chocolate-brown);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            letter-spacing: 0.5px;
+            position: relative;
+            padding-bottom: 4px;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--hot-pink);
+            transition: width 0.4s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--hot-pink);
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .lang-toggle {
+            background: var(--blush-pink);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--hot-pink);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .lang-toggle:hover {
+            background: var(--hot-pink);
+            color: white;
+        }
+        
+        /* Mobile Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--hot-pink);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            min-height: 90vh;
+            background: linear-gradient(135deg, var(--blush-pink) 0%, var(--cream) 100%);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle, var(--gold) 1px, transparent 1px),
+                radial-gradient(circle, var(--gold) 1px, transparent 1px);
+            background-size: 50px 50px, 80px 80px;
+            background-position: 0 0, 25px 25px;
+            opacity: 0.15;
+            animation: float 20s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            animation: fadeInLeft 1s ease-out;
+        }
+        
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .hero-accent {
+            font-family: var(--font-accent);
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--chocolate-brown);
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--charcoal);
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+        
+        .cta-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .btn-primary {
+            background: var(--hot-pink);
+            color: white;
+            box-shadow: 0 4px 15px rgba(233, 30, 140, 0.3);
+        }
+        
+        .btn-primary:hover {
+            background: var(--deep-pink);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(233, 30, 140, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: var(--chocolate-brown);
+            border: 2px solid var(--warm-taupe);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--gold);
+            color: white;
+            border-color: var(--gold);
+            transform: translateY(-2px);
+        }
+        
+        .hero-images {
+            position: relative;
+            animation: fadeInRight 1s ease-out;
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .hero-images img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(74, 52, 40, 0.15);
+        }
+        
+        /* Value Proposition */
+        .value-props {
+            padding: 6rem 2rem;
+            background: white;
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+        
+        .section-accent {
+            font-family: var(--font-accent);
+            font-size: 1.8rem;
+            color: var(--gold);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            color: var(--chocolate-brown);
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+        
+        .value-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+        }
+        
+        .value-card {
+            text-align: center;
+            padding: 2.5rem 2rem;
+            background: var(--cream);
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(135deg, var(--hot-pink), var(--gold));
+            border-radius: 16px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+        
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(74, 52, 40, 0.12);
+        }
+        
+        .value-card:hover::before {
+            opacity: 1;
+        }
+        
+        .value-icon {
+            font-size: 3rem;
+            color: var(--hot-pink);
+            margin-bottom: 1.5rem;
+        }
+        
+        .value-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            color: var(--chocolate-brown);
+            margin-bottom: 1rem;
+        }
+        
+        .value-card p {
+            color: var(--charcoal);
+            line-height: 1.6;
+        }
+        
+        /* Featured Services */
+        .services {
+            padding: 6rem 2rem;
+            background: linear-gradient(180deg, var(--cream) 0%, var(--blush-pink) 100%);
+            position: relative;
+        }
+        
+        .services::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle, var(--gold) 1px, transparent 1px),
+                radial-gradient(circle, var(--gold) 1px, transparent 1px);
+            background-size: 60px 60px, 90px 90px;
+            background-position: 0 0, 30px 30px;
+            opacity: 0.12;
+            pointer-events: none;
+        }
+        
+        .services-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(74, 52, 40, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            border: 2px solid var(--gold);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 20px 50px rgba(201, 168, 106, 0.3);
+            border-color: var(--hot-pink);
+        }
+        
+        .service-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        
+        .service-card:hover .service-image {
+            transform: scale(1.05);
+        }
+        
+        .service-content {
+            padding: 2rem;
+        }
+        
+        .service-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--chocolate-brown);
+            margin-bottom: 0.75rem;
+        }
+        
+        .service-badge {
+            display: inline-block;
+            background: var(--gold);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .service-card p {
+            color: var(--charcoal);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-link {
+            color: var(--hot-pink);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: gap 0.3s ease;
+        }
+        
+        .service-link:hover {
+            gap: 0.75rem;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            padding: 6rem 2rem;
+            background: white;
+        }
+        
+        .pricing-table {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--cream);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 5px 25px rgba(74, 52, 40, 0.08);
+        }
+        
+        .pricing-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            border-bottom: 2px solid rgba(184, 151, 109, 0.2);
+        }
+        
+        .pricing-row:last-child {
+            border-bottom: none;
+        }
+        
+        .pricing-item {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            color: var(--chocolate-brown);
+        }
+        
+        .pricing-price {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--hot-pink);
+        }
+        
+        .pricing-note {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--blush-pink);
+            border-radius: 12px;
+            border-left: 4px solid var(--gold);
+        }
+        
+        .pricing-note p {
+            color: var(--chocolate-brown);
+            line-height: 1.6;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 6rem 2rem;
+            background: var(--blush-pink);
+            position: relative;
+        }
+        
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle, var(--gold) 1px, transparent 1px),
+                radial-gradient(circle, var(--gold) 1px, transparent 1px);
+            background-size: 50px 50px, 75px 75px;
+            background-position: 0 0, 25px 25px;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+        
+        .testimonial-slider {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 5px 25px rgba(74, 52, 40, 0.1);
+            text-align: center;
+        }
+        
+        .testimonial-quote {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--charcoal);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .testimonial-quote::before {
+            content: '"';
+            font-family: var(--font-display);
+            font-size: 5rem;
+            color: var(--gold);
+            opacity: 0.3;
+            position: absolute;
+            top: -2rem;
+            left: -1rem;
+        }
+        
+        .testimonial-author {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--chocolate-brown);
+            font-size: 1.1rem;
+        }
+        
+        .testimonial-stars {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        
+        /* Instagram Feed */
+        .instagram {
+            padding: 6rem 2rem;
+            background: white;
+        }
+        
+        .instagram-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .instagram-post {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 1;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            display: block;
+            text-decoration: none;
+        }
+        
+        .instagram-post:hover {
+            transform: scale(1.03);
+        }
+        
+        .instagram-post img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .instagram-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255, 229, 236, 0.95), rgba(201, 168, 106, 0.95));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .instagram-post:hover .instagram-overlay {
+            opacity: 1;
+        }
+        
+        /* Contact/CTA Section */
+        .contact-cta {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--hot-pink), var(--deep-pink));
+            color: white;
+            text-align: center;
+        }
+        
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .contact-content h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-content p {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-whatsapp {
+            background: white;
+            color: var(--hot-pink);
+            font-size: 1.1rem;
+        }
+        
+        .btn-whatsapp:hover {
+            background: var(--gold);
+            color: white;
+        }
+        
+        .btn-instagram {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            font-size: 1.1rem;
+        }
+        
+        .btn-instagram:hover {
+            background: white;
+            color: var(--hot-pink);
+        }
+        
+        .btn-rush {
+            background: linear-gradient(135deg, var(--gold), var(--warm-taupe));
+            color: white;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 20px rgba(201, 168, 106, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-rush::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .btn-rush:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(201, 168, 106, 0.6);
+        }
+        
+        .btn-rush:hover::before {
+            left: 100%;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--chocolate-brown);
+            color: var(--cream);
+            padding: 4rem 2rem 2rem;
+        }
+        
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-section h3 {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: var(--cream);
+            text-decoration: none;
+            line-height: 2;
+            display: block;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: var(--gold);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(201, 168, 106, 0.3);
+            color: var(--warm-taupe);
+        }
+        
+        .payment-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .payment-icon {
+            width: 50px;
+            height: 30px;
+            background: white;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.7rem;
+            color: var(--chocolate-brown);
+        }
+        
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .cta-group {
+                justify-content: center;
+            }
+            
+            .hero-images {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2.2rem;
+            }
+            
+            .value-grid,
+            .services-grid,
+            .instagram-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-table {
+                padding: 2rem 1.5rem;
+            }
+            
+            .pricing-row {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: flex-start;
+            }
+            
+            .contact-buttons {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="images/logo-taart-en-koek.jpegek.jpeg" alt="Taart en Koek Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Op Maat Bestellen</a></li>
+                <li><a href="#pricing">Prijzen</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="lang-toggle">NL / EN</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-accent">Met Liefde Handgemaakt</span>
+                <h1>Droomtaarten Op Maat</h1>
+                <p class="hero-subtitle">Lokale taarten op maat in Rotterdam-Nesselande. Handgemaakt, dagelijks verse ingrediënten, geen fondant—alleen ganache.</p>
+                <div class="cta-group">
+                    <a href="https://wa.me/31634191203" class="btn btn-primary" target="_blank">
+                        <i class="ph-fill ph-whatsapp-logo"></i>
+                        Plaats Je Bestelling
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <i class="ph ph-arrow-down"></i>
+                        Hoe Het Werkt
+                    </a>
+                </div>
+            </div>
+            <div class="hero-images">
+                <img src="images/theme-cake-pokemon.jpgmon.jpg" alt="Handgemaakte verjaardagstaart met gouden en roze decoraties">
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="value-props">
+        <div class="section-header">
+            <span class="section-accent">Waarom Kiezen Voor Ons</span>
+            <h2 class="section-title">Vier Met Zoetigheid</h2>
+            <p class="section-subtitle">Elke taart is handgemaakt met premium ingrediënten en gepersonaliseerd voor jouw feest</p>
+        </div>
+        <div class="value-grid">
+            <div class="value-card fade-in">
+                <i class="ph-fill ph-cake value-icon"></i>
+                <h3>Dagelijks Handgemaakt</h3>
+                <p>Elke taart wordt vers op bestelling gemaakt met nauwgezette aandacht voor detail en kwaliteit</p>
+            </div>
+            <div class="value-card fade-in">
+                <i class="ph-fill ph-heart value-icon"></i>
+                <h3>Premium Ingrediënten</h3>
+                <p>Alleen de beste ingrediënten—dagelijks vers, met glutenvrije opties beschikbaar</p>
+            </div>
+            <div class="value-card fade-in">
+                <i class="ph-fill ph-sparkle value-icon"></i>
+                <h3>Geen Fondant, Alleen Ganache</h3>
+                <p>Gladde, heerlijke ganache glazuur—geen fondant voor betere smaak en textuur</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="services" id="services">
+        <div class="section-header">
+            <span class="section-accent">Onze Creaties</span>
+            <h2 class="section-title">Taarten Op Maat Voor Elk Feest</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <img src="/mnt/project/Photoroom_20251026_171313.JPG" class="service-image" alt="Verjaardagstaart">
+                <div class="service-content">
+                    <h3>Verjaardagstaarten</h3>
+                    <span class="service-badge">Populair</span>
+                    <p>Vier in stijl met taarten op maat, ontworpen voor elk thema of elke leeftijd</p>
+                    <a href="https://www.instagram.com/taart_en_koek/" class="service-link" target="_blank">
+                        Bekijk Galerij <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="service-card fade-in">
+                <img src="/mnt/project/Photoroom_20251019_142706.JPG" class="service-image" alt="Babyshower taart">
+                <div class="service-content">
+                    <h3>Gender Reveal & Baby Taarten</h3>
+                    <span class="service-badge">Trending</span>
+                    <p>Prachtige, gepersonaliseerde taarten voor babyshowers en gender reveal feestjes</p>
+                    <a href="https://www.instagram.com/taart_en_koek/" class="service-link" target="_blank">
+                        Bekijk Galerij <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="service-card fade-in">
+                <img src="/mnt/project/Photoroom_20251214_110927.JPG" class="service-image" alt="Thema taart">
+                <div class="service-content">
+                    <h3>Karakter & Thema Taarten</h3>
+                    <span class="service-badge">Kids Favoriet</span>
+                    <p>Breng hun favoriete personages tot leven met gedetailleerde ontwerpen op maat</p>
+                    <a href="https://www.instagram.com/taart_en_koek/" class="service-link" target="_blank">
+                        Bekijk Galerij <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="service-card fade-in">
+                <img src="/mnt/project/IMG_2391.jpeg" class="service-image" alt="Elegante feest taart">
+                <div class="service-content">
+                    <h3>Bruiloft & Jubileum</h3>
+                    <span class="service-badge">Elegant</span>
+                    <p>Verfijnde ontwerpen voor jouw speciale mijlpaal feesten</p>
+                    <a href="https://www.instagram.com/taart_en_koek/" class="service-link" target="_blank">
+                        Bekijk Galerij <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="service-card fade-in">
+                <img src="/mnt/project/IMG_2743.jpeg" class="service-image" alt="Cupcakes en mini taarten">
+                <div class="service-content">
+                    <h3>Cupcakes & Mini Taarten</h3>
+                    <span class="service-badge">Ideaal Voor Groepen</span>
+                    <p>Perfect voor bedrijfsevenementen, bruiloften of feestjes waar iedereen zijn eigen portie krijgt</p>
+                    <a href="https://www.instagram.com/taart_en_koek/" class="service-link" target="_blank">
+                        Bekijk Galerij <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="service-card fade-in">
+                <img src="/mnt/project/Photoroom_20251214_171127.JPG" class="service-image" alt="Chocolade drip cake">
+                <div class="service-content">
+                    <h3>Chocoladetaarten & Drip Cakes</h3>
+                    <span class="service-badge">Chocolade Lovers</span>
+                    <p>Rijke chocoladetaarten met spectaculaire drip decoraties en luxe toppings</p>
+                    <a href="https://www.instagram.com/taart_en_koek/" class="service-link" target="_blank">
+                        Bekijk Galerij <i class="ph ph-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="section-header">
+            <span class="section-accent">Transparante Prijzen</span>
+            <h2 class="section-title">Startprijzen</h2>
+            <p class="section-subtitle">Alle prijzen zijn inclusief premium ingrediënten en basis decoratie</p>
+        </div>
+        <div class="pricing-table">
+            <div class="pricing-row">
+                <span class="pricing-item">Bento Taarten</span>
+                <span class="pricing-price">€30</span>
+            </div>
+            <div class="pricing-row">
+                <span class="pricing-item">Ronde Taarten (10 personen)</span>
+                <span class="pricing-price">€55</span>
+            </div>
+            <div class="pricing-row">
+                <span class="pricing-item">Ronde Taarten (15 personen)</span>
+                <span class="pricing-price">€82,50</span>
+            </div>
+            <div class="pricing-row">
+                <span class="pricing-item">Ronde Taarten - 1 Laag (20 personen)</span>
+                <span class="pricing-price">€110</span>
+            </div>
+            <div class="pricing-row">
+                <span class="pricing-item">Ronde Taarten - 2 Lagen (20 personen)</span>
+                <span class="pricing-price">€130</span>
+            </div>
+            <div class="pricing-row">
+                <span class="pricing-item">Hart Taarten (8-10 personen)</span>
+                <span class="pricing-price">€47,50</span>
+            </div>
+            <div class="pricing-note">
+                <p><strong>Smaken:</strong> Vanille, Red Velvet, Chocolade | <strong>Vulling:</strong> Vanille, Aardbei</p>
+                <p style="margin-top: 1rem;"><strong>Let op:</strong> Complexe ontwerpen kunnen de uiteindelijke prijs beïnvloeden. Glutenvrije optie beschikbaar (+15% max)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <span class="section-accent">Tevreden Klanten</span>
+            <h2 class="section-title">Wat Onze Klanten Zeggen</h2>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <div class="testimonial-quote">
+                    De taart was absoluut prachtig en smaakte nog beter dan het eruitzag! Perfect voor de verjaardag van onze dochter. Taart en Koek is een echte aanrader!
+                </div>
+                <div class="testimonial-author">Sarah M.</div>
+                <div class="testimonial-stars">★★★★★</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram">
+        <div class="section-header">
+            <span class="section-accent">Volg Ons Verhaal</span>
+            <h2 class="section-title">@taart_en_koek</h2>
+            <p class="section-subtitle">Wil je meer zien? Bekijk de volledige collectie op Instagram</p>
+        </div>
+        <div class="instagram-grid">
+            <a href="https://www.instagram.com/taart_en_koek/" target="_blank" class="instagram-post">
+                <img src="images/heart-cake.jpegke.jpeg" alt="Instagram post">
+                <div class="instagram-overlay">
+                    <i class="ph-fill ph-instagram-logo"></i>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/taart_en_koek/" target="_blank" class="instagram-post">
+                <img src="images/mile-stone-baby.jpgaby.jpg" alt="Instagram post">
+                <div class="instagram-overlay">
+                    <i class="ph-fill ph-instagram-logo"></i>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/taart_en_koek/" target="_blank" class="instagram-post">
+                <img src="images/theme-cake-paw-patrol.jpgrol.jpg" alt="Instagram post">
+                <div class="instagram-overlay">
+                    <i class="ph-fill ph-instagram-logo"></i>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta" id="contact">
+        <div class="contact-content">
+            <h2>Vergeten Te Bestellen, Zitten Alle Bakkers Vol?</h2>
+            <p>Wacht niet langer, je dierbaren zijn te belangrijk. Je leeft maar 1 keer</p>
+            <div class="contact-buttons">
+                <a href="https://wa.me/31634191203" class="btn btn-whatsapp" target="_blank">
+                    <i class="ph-fill ph-whatsapp-logo"></i>
+                    Bestel Via WhatsApp
+                </a>
+                <a href="https://wa.me/31634191203?text=Spoedbestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" class="btn btn-rush" target="_blank">
+                    <i class="ph-fill ph-lightning"></i>
+                    Spoedtaart WhatsApp
+                </a>
+                <a href="https://www.instagram.com/taart_en_koek/" class="btn btn-instagram" target="_blank">
+                    <i class="ph-fill ph-instagram-logo"></i>
+                    Volg Op Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Taart en Koek</h3>
+                <p>Handgemaakte taarten op maat voor jouw speciale feesten</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Ophaallocatie</h3>
+                <p>Rotterdam-Nesselande</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <a href="https://wa.me/31634191203" target="_blank">WhatsApp: +31 6 3419 1203</a>
+                <a href="https://www.instagram.com/taart_en_koek/" target="_blank">Instagram: @taart_en_koek</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Juridisch</h3>
+                <a href="#">Algemene Voorwaarden</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Taart en Koek. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
