@@ -739,7 +739,6 @@
         }
         
         .service-card::after {
-            content: '';
             position: absolute;
             inset: 0;
             border-radius: 24px;
@@ -860,7 +859,6 @@
         .pricing-header {
             text-align: center;
             padding-bottom: 2rem;
-            border-bottom: 2px solid var(--blush-pink);
             margin-bottom: 2rem;
         }
         
@@ -868,7 +866,7 @@
             font-family: var(--font-display);
             font-size: 1.8rem;
             color: var(--chocolate-brown);
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
         
         .pricing-header p {
@@ -880,12 +878,9 @@
             grid-template-columns: 1fr auto;
             align-items: center;
             padding: 1.25rem 1.5rem;
-            border-radius: 12px;
+            border-radius: 0px;
             transition: all 0.3s ease;
-        }
-        
-        .pricing-row:hover {
-            background: var(--blush-pink);
+            border-bottom: 2px solid var(--blush-pink);
         }
         
         .pricing-item {
@@ -1415,17 +1410,17 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#gallery">Galerij</a></li>
-                <li><a href="#services">Thema taarten</a></li>
+                <li><a href="#services">Themataarten</a></li>
                 <li><a href="#pricing">Prijzen</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
                 <a href="https://wa.me/31634191203?text=Normale bestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" style="background:var(--hot-pink)" class="nav-cta btn-rush" target="_blank">
                     <i class="ph-fill ph-lightning"></i>
                     Bestellen
                 </a>
-                <a href="https://wa.me/31634191203?text=Spoedbestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" class="nav-cta btn-rush" target="_blank">
-                    <i class="ph-fill ph-lightning"></i>
-                    Help spoedgeval
-                </a>
+<!--                <a style="visibility: collapse" href="https://wa.me/31634191203?text=Spoed bestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" class="nav-cta btn-rush" target="_blank">-->
+<!--                    <i class="ph-fill ph-lightning"></i>-->
+<!--                    Spoed bestelling-->
+<!--                </a>-->
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -1492,8 +1487,8 @@
     <!-- Value Propositions -->
     <section class="value-props">
         <div class="section-header">
-            <span class="section-accent">Waarom Kiezen Voor Ons</span>
-            <h2 class="section-title">Vier Met Zoetigheid</h2>
+            <span class="section-accent">Kies voor ons</span>
+            <h2 class="section-title">en vier het met zoetigheid</h2>
             <p class="section-subtitle">Elke taart wordt met passie gemaakt, precies zoals jij hem wilt</p>
         </div>
         <div class="value-grid">
@@ -1501,21 +1496,21 @@
                 <div class="value-icon">
                     <i class="ph-fill ph-chef-hat"></i>
                 </div>
-                <h3>Dagelijks Vers Gebakken</h3>
+                <h3>Handgemaakt</h3>
                 <p>Elke taart wordt op de dag van afhalen bereid. Geen dagen oude baksels, alleen verse kwaliteit.</p>
             </div>
             <div class="value-card fade-in">
                 <div class="value-icon">
                     <i class="ph-fill ph-sparkle"></i>
                 </div>
-                <h3>Geen Fondant, Alleen Ganache</h3>
+                <h3>Geen fondant, alleen ganache</h3>
                 <p>Gladde, heerlijke ganache glazuur voor de beste smaak en textuur. Fondant is bij ons verleden tijd.</p>
             </div>
             <div class="value-card fade-in">
                 <div class="value-icon">
                     <i class="ph-fill ph-heart"></i>
                 </div>
-                <h3>Persoonlijk Ontwerp</h3>
+                <h3>Persoonlijk ontwerp</h3>
                 <p>Deel je idee en wij maken het werkelijkheid. Van thema's tot kleuren, alles kan op maat.</p>
             </div>
         </div>
@@ -1582,7 +1577,7 @@
         <div class="gallery-cta">
             <a href="https://www.instagram.com/taart_en_koek/" class="btn btn-primary" target="_blank">
                 <i class="ph-fill ph-instagram-logo"></i>
-                Meer Op Instagram
+                meer op instagram
             </a>
         </div>
     </section>
@@ -1590,8 +1585,8 @@
     <!-- Services -->
     <section class="services" id="services">
         <div class="section-header">
-            <span class="section-accent">Ons Aanbod</span>
-            <h2 class="section-title">Taarten Voor Elk Moment</h2>
+            <span class="section-accent">Ons aanbod</span>
+            <h2 class="section-title">Thema taarten</h2>
             <p class="section-subtitle">Van intieme feestjes tot grote vieringen</p>
         </div>
         <div class="services-grid">
@@ -1622,10 +1617,9 @@
                     </a>
                 </div>
             </div>
-            
             <div class="service-card fade-in">
                 <div class="service-image-wrapper">
-                    <img src="images/theme-cake-nijntje.jpgtje.jpg" class="service-image" alt="Thema taart">
+                    <img src="images/theme-cake-nijntje.jpg" class="service-image" alt="Thema taart">
                     <span class="service-badge">Kids Favoriet</span>
                 </div>
                 <div class="service-content">
@@ -1689,7 +1683,7 @@
     <section class="testimonials" id="testimonials">
         <div class="section-header">
             <span class="section-accent">Tevreden Klanten</span>
-            <h2 class="section-title">Wat Klanten Zeggen</h2>
+            <h2 class="section-title">Wat ze zeggen</h2>
         </div>
         <div class="testimonial-grid">
             <div class="testimonial fade-in">
@@ -1732,19 +1726,19 @@
     <section class="contact-cta" id="contact">
         <div class="contact-content">
             <h2>Een dierbare vergeten! Alle bakker's vol?</h2>
-            <p>Druk snel op de spoed knop.</p>
+            <p>Druk snel op</p>
             <div class="contact-buttons">
                 <a href="https://wa.me/31634191203" class="btn btn-whatsapp" target="_blank">
                     <i class="ph-fill ph-whatsapp-logo"></i>
-                    Bestel Via WhatsApp
+                    Bestel via WhatsApp
                 </a>
-                <a href="https://wa.me/31634191203?text=Spoedbestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" class="btn btn-rush" target="_blank">
-                    <i class="ph-fill ph-lightning"></i>
-                    Help spoedgeval
-                </a>
+<!--                <a href="https://wa.me/31634191203?text=Spoedbestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" class="btn btn-rush" target="_blank">-->
+<!--                    <i class="ph-fill ph-lightning"></i>-->
+<!--                    Help spoedgeval-->
+<!--                </a>-->
                 <a href="https://www.instagram.com/taart_en_koek/" class="btn btn-instagram" target="_blank">
                     <i class="ph-fill ph-instagram-logo"></i>
-                    Volg Op Instagram
+                    Volg op Instagram
                 </a>
             </div>
         </div>
