@@ -174,14 +174,14 @@
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            gap: 1.5rem;
+            gap: 0;
         }
         
         .gallery-item {
             position: relative;
             aspect-ratio: 1;
             overflow: hidden;
-            border-radius: 12px;
+            border-radius: 0;
             box-shadow: 0 4px 12px rgba(74, 52, 40, 0.1);
             cursor: pointer;
             transition: all 0.3s ease;
@@ -374,23 +374,23 @@
     <!-- Gallery Section -->
     <section class="gallery-section">
         <div class="gallery-grid">
-            <div class="gallery-item" onclick="openLightbox(0)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/554108678_18058650173622428_8541974304432771254_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHITkPcOXKc3GxfJZxWVyeL3mjxyvjUZoLjAwDJh55c_sF2Nl0tAxIP-g1nYVKHKc0&_nc_ohc=erfamC3TTkUQ7kNvwFYDKGq&_nc_gid=aeXebVGPR09YnKSbDkFBvw&edm=APU89FABAAAA&ccb=7-5&oh=00_AfsvQf603lH6wDat6NrkkxTvq-1NzpmEv2Ner53LAbEqqw&oe=69841266&_nc_sid=bc0c2c" alt="Maatwerk Taarten 1" loading="lazy">
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_19_bca012b8.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_19_bca012b8.jpg" alt="Maatwerk Taarten 1" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(1)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/540757036_18055390187622428_7048309584675171459_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHITkPcOXKc3GxfJZxWVyeL3mjxyvjUZoLjAwDJh55c_sF2Nl0tAxIP-g1nYVKHKc0&_nc_ohc=1Bjuuv00GawQ7kNvwHQ7Af0&_nc_gid=aeXebVGPR09YnKSbDkFBvw&edm=APU89FABAAAA&ccb=7-5&oh=00_AfsQwSSSDKhmD6vzMTAcTclUTRfI5OaUCd4LEfnEZgVl2g&oe=69841348&_nc_sid=bc0c2c" alt="Maatwerk Taarten 2" loading="lazy">
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_20_15bc4985.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_20_15bc4985.jpg" alt="Maatwerk Taarten 2" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(2)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/539468407_18054830828622428_5370216623602605202_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHITkPcOXKc3GxfJZxWVyeL3mjxyvjUZoLjAwDJh55c_sF2Nl0tAxIP-g1nYVKHKc0&_nc_ohc=njwmxmPUGJgQ7kNvwF5IO3o&_nc_gid=aeXebVGPR09YnKSbDkFBvw&edm=APU89FABAAAA&ccb=7-5&oh=00_Afs0wFQNTKL6gimW62cFoHx0Sp4Z7seTWJayH5v6mENRzA&oe=698411B8&_nc_sid=bc0c2c" alt="Maatwerk Taarten 3" loading="lazy">
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_21_500f62a8.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_21_500f62a8.jpg" alt="Maatwerk Taarten 3" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(3)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/535872861_18054133226622428_4272340828266117042_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHITkPcOXKc3GxfJZxWVyeL3mjxyvjUZoLjAwDJh55c_sF2Nl0tAxIP-g1nYVKHKc0&_nc_ohc=HMJgCAciBgEQ7kNvwH9xmy0&_nc_gid=aeXebVGPR09YnKSbDkFBvw&edm=APU89FABAAAA&ccb=7-5&oh=00_AftBMA16me2xULLZ003iaRBJLYpXEkkcOCbL6jsQrrnsEA&oe=698414B7&_nc_sid=bc0c2c" alt="Maatwerk Taarten 4" loading="lazy">
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_22_05e3e50c.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_22_05e3e50c.jpg" alt="Maatwerk Taarten 4" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(4)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/515518347_18048759407622428_8652057551588691874_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHITkPcOXKc3GxfJZxWVyeL3mjxyvjUZoLjAwDJh55c_sF2Nl0tAxIP-g1nYVKHKc0&_nc_ohc=7jvS2RBuGscQ7kNvwEHI57a&_nc_gid=aeXebVGPR09YnKSbDkFBvw&edm=APU89FABAAAA&ccb=7-5&oh=00_AftPK9O_qZjGVhC_i4QaVftq1XKk6cBY9-pDVIwnXyFgBw&oe=6983E4EF&_nc_sid=bc0c2c" alt="Maatwerk Taarten 5" loading="lazy">
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_23_20c7c661.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_23_20c7c661.jpg" alt="Maatwerk Taarten 5" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(5)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/513887916_18048320561622428_2233811918367323571_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHITkPcOXKc3GxfJZxWVyeL3mjxyvjUZoLjAwDJh55c_sF2Nl0tAxIP-g1nYVKHKc0&_nc_ohc=GB26CKMr5SQQ7kNvwGU1iXH&_nc_gid=aeXebVGPR09YnKSbDkFBvw&edm=APU89FABAAAA&ccb=7-5&oh=00_AfsoMGC7g6N57OSTVon65PESlN6odDNlTvA2B_qXg7f2rw&oe=6983FDFB&_nc_sid=bc0c2c" alt="Maatwerk Taarten 6" loading="lazy">
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_24_0355d60d.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_24_0355d60d.jpg" alt="Maatwerk Taarten 6" loading="lazy">
             </div>
         </div>
     </section>
@@ -439,12 +439,12 @@
 
     <script>
         const images = [
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/554108678_18058650173622428_8541974304432771254_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHITkPcOXKc3GxfJZxWVyeL3mjxyvjUZoLjAwDJh55c_sF2Nl0tAxIP-g1nYVKHKc0&_nc_ohc=erfamC3TTkUQ7kNvwFYDKGq&_nc_gid=aeXebVGPR09YnKSbDkFBvw&edm=APU89FABAAAA&ccb=7-5&oh=00_AfsvQf603lH6wDat6NrkkxTvq-1NzpmEv2Ner53LAbEqqw&oe=69841266&_nc_sid=bc0c2c",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/540757036_18055390187622428_7048309584675171459_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHITkPcOXKc3GxfJZxWVyeL3mjxyvjUZoLjAwDJh55c_sF2Nl0tAxIP-g1nYVKHKc0&_nc_ohc=1Bjuuv00GawQ7kNvwHQ7Af0&_nc_gid=aeXebVGPR09YnKSbDkFBvw&edm=APU89FABAAAA&ccb=7-5&oh=00_AfsQwSSSDKhmD6vzMTAcTclUTRfI5OaUCd4LEfnEZgVl2g&oe=69841348&_nc_sid=bc0c2c",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/539468407_18054830828622428_5370216623602605202_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHITkPcOXKc3GxfJZxWVyeL3mjxyvjUZoLjAwDJh55c_sF2Nl0tAxIP-g1nYVKHKc0&_nc_ohc=njwmxmPUGJgQ7kNvwF5IO3o&_nc_gid=aeXebVGPR09YnKSbDkFBvw&edm=APU89FABAAAA&ccb=7-5&oh=00_Afs0wFQNTKL6gimW62cFoHx0Sp4Z7seTWJayH5v6mENRzA&oe=698411B8&_nc_sid=bc0c2c",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/535872861_18054133226622428_4272340828266117042_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHITkPcOXKc3GxfJZxWVyeL3mjxyvjUZoLjAwDJh55c_sF2Nl0tAxIP-g1nYVKHKc0&_nc_ohc=HMJgCAciBgEQ7kNvwH9xmy0&_nc_gid=aeXebVGPR09YnKSbDkFBvw&edm=APU89FABAAAA&ccb=7-5&oh=00_AftBMA16me2xULLZ003iaRBJLYpXEkkcOCbL6jsQrrnsEA&oe=698414B7&_nc_sid=bc0c2c",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/515518347_18048759407622428_8652057551588691874_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHITkPcOXKc3GxfJZxWVyeL3mjxyvjUZoLjAwDJh55c_sF2Nl0tAxIP-g1nYVKHKc0&_nc_ohc=7jvS2RBuGscQ7kNvwEHI57a&_nc_gid=aeXebVGPR09YnKSbDkFBvw&edm=APU89FABAAAA&ccb=7-5&oh=00_AftPK9O_qZjGVhC_i4QaVftq1XKk6cBY9-pDVIwnXyFgBw&oe=6983E4EF&_nc_sid=bc0c2c",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/513887916_18048320561622428_2233811918367323571_n.jpg?stp=dst-jpg_e35_p1080x1080_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHITkPcOXKc3GxfJZxWVyeL3mjxyvjUZoLjAwDJh55c_sF2Nl0tAxIP-g1nYVKHKc0&_nc_ohc=GB26CKMr5SQQ7kNvwGU1iXH&_nc_gid=aeXebVGPR09YnKSbDkFBvw&edm=APU89FABAAAA&ccb=7-5&oh=00_AfsoMGC7g6N57OSTVon65PESlN6odDNlTvA2B_qXg7f2rw&oe=6983FDFB&_nc_sid=bc0c2c"
+            "images/instagram_19_bca012b8.jpg",
+            "images/instagram_20_15bc4985.jpg",
+            "images/instagram_21_500f62a8.jpg",
+            "images/instagram_22_05e3e50c.jpg",
+            "images/instagram_23_20c7c661.jpg",
+            "images/instagram_24_0355d60d.jpg"
 ];
         let currentImageIndex = 0;
         
@@ -484,6 +484,17 @@
                 if (e.key === 'ArrowRight') navigateLightbox(1, e);
             }
         });
-    </script>
+    
+        
+        // Handle tile click to open WhatsApp
+        function handleTileClick(element) {
+            const theme = element.getAttribute('data-theme');
+            const imageName = element.getAttribute('data-image');
+            const phoneNumber = '31612345678'; // Replace with actual WhatsApp number
+            const message = `Hallo! Ik ben geïnteresseerd in een ${theme}. Ik vond deze taart mooi: ${imageName}`;
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+</script>
 </body>
 </html>

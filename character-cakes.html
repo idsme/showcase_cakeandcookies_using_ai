@@ -174,14 +174,14 @@
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            gap: 1.5rem;
+            gap: 0;
         }
         
         .gallery-item {
             position: relative;
             aspect-ratio: 1;
             overflow: hidden;
-            border-radius: 12px;
+            border-radius: 0;
             box-shadow: 0 4px 12px rgba(74, 52, 40, 0.1);
             cursor: pointer;
             transition: all 0.3s ease;
@@ -374,23 +374,23 @@
     <!-- Gallery Section -->
     <section class="gallery-section">
         <div class="gallery-grid">
-            <div class="gallery-item" onclick="openLightbox(0)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/621407341_18072230975622428_8904377006193865772_n.jpg?stp=dst-jpg_e35_s640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=8GJFEHcc4nMQ7kNvwGXyaXO&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfucIj19EKlDlrNktLW8laaRJqgSyymI4h22NwKN0hdHlA&oe=69840142&_nc_sid=8b3546" alt="Thema & Karakter Taarten 1" loading="lazy">
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_01_18533427.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_01_18533427.jpg" alt="Thema & Karakter Taarten 1" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(1)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/621668471_18072104423622428_6358116950017693328_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=AdgJa47K2PIQ7kNvwGWeQX3&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Afvp9cyIUqymvig3AclsbgYRQsRfQ-lMrxsgFudCNFdAZA&oe=69840FE9&_nc_sid=8b3546" alt="Thema & Karakter Taarten 2" loading="lazy">
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_02_9fcf053a.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_02_9fcf053a.jpg" alt="Thema & Karakter Taarten 2" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(2)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/612058671_18070768481622428_1390108867698112641_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=qTVastccGnsQ7kNvwFoebaO&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Afu9wXY8ZXYoJ8T0qWKdP9gCF9fuQBDJdzeBOfo0nqwuEQ&oe=6984134D&_nc_sid=8b3546" alt="Thema & Karakter Taarten 3" loading="lazy">
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_03_756d1531.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_03_756d1531.jpg" alt="Thema & Karakter Taarten 3" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(3)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/610296779_18070388513622428_4860433606460508201_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=mNpjbxSyFwEQ7kNvwFL9kWp&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Aftpk9of6TtHLA8QLTSa7skvEtxkLxs9KWWFqBcFObE_Hw&oe=6984015D&_nc_sid=8b3546" alt="Thema & Karakter Taarten 4" loading="lazy">
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_04_ab983036.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_04_ab983036.jpg" alt="Thema & Karakter Taarten 4" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(4)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/610977727_18070387931622428_407395637279063913_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=v8FgwhL8evMQ7kNvwHAilg6&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Afvh7Pyl8DxIbr1IVhH6f6w4Kv6jrT8LsqGLHXmPVRRKNg&oe=6983FC00&_nc_sid=8b3546" alt="Thema & Karakter Taarten 5" loading="lazy">
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_05_06a9e21c.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_05_06a9e21c.jpg" alt="Thema & Karakter Taarten 5" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(5)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/601371168_18067760312622428_5056783256466949917_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=CKr-SxfevzMQ7kNvwH7Axj2&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Afu5AHWhTZ-ZTisVt3X_ZYnjoyoEMn4y77y2A3_FGA3wvg&oe=69840AD7&_nc_sid=8b3546" alt="Thema & Karakter Taarten 6" loading="lazy">
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_06_3373e521.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_06_3373e521.jpg" alt="Thema & Karakter Taarten 6" loading="lazy">
             </div>
         </div>
     </section>
@@ -439,12 +439,12 @@
 
     <script>
         const images = [
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/621407341_18072230975622428_8904377006193865772_n.jpg?stp=dst-jpg_e35_s640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=8GJFEHcc4nMQ7kNvwGXyaXO&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfucIj19EKlDlrNktLW8laaRJqgSyymI4h22NwKN0hdHlA&oe=69840142&_nc_sid=8b3546",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/621668471_18072104423622428_6358116950017693328_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=AdgJa47K2PIQ7kNvwGWeQX3&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Afvp9cyIUqymvig3AclsbgYRQsRfQ-lMrxsgFudCNFdAZA&oe=69840FE9&_nc_sid=8b3546",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/612058671_18070768481622428_1390108867698112641_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=qTVastccGnsQ7kNvwFoebaO&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Afu9wXY8ZXYoJ8T0qWKdP9gCF9fuQBDJdzeBOfo0nqwuEQ&oe=6984134D&_nc_sid=8b3546",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/610296779_18070388513622428_4860433606460508201_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=mNpjbxSyFwEQ7kNvwFL9kWp&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Aftpk9of6TtHLA8QLTSa7skvEtxkLxs9KWWFqBcFObE_Hw&oe=6984015D&_nc_sid=8b3546",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/610977727_18070387931622428_407395637279063913_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=v8FgwhL8evMQ7kNvwHAilg6&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Afvh7Pyl8DxIbr1IVhH6f6w4Kv6jrT8LsqGLHXmPVRRKNg&oe=6983FC00&_nc_sid=8b3546",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/601371168_18067760312622428_5056783256466949917_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=CKr-SxfevzMQ7kNvwH7Axj2&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Afu5AHWhTZ-ZTisVt3X_ZYnjoyoEMn4y77y2A3_FGA3wvg&oe=69840AD7&_nc_sid=8b3546"
+            "images/instagram_01_18533427.jpg",
+            "images/instagram_02_9fcf053a.jpg",
+            "images/instagram_03_756d1531.jpg",
+            "images/instagram_04_ab983036.jpg",
+            "images/instagram_05_06a9e21c.jpg",
+            "images/instagram_06_3373e521.jpg"
 ];
         let currentImageIndex = 0;
         
@@ -484,6 +484,17 @@
                 if (e.key === 'ArrowRight') navigateLightbox(1, e);
             }
         });
-    </script>
+    
+        
+        // Handle tile click to open WhatsApp
+        function handleTileClick(element) {
+            const theme = element.getAttribute('data-theme');
+            const imageName = element.getAttribute('data-image');
+            const phoneNumber = '31612345678'; // Replace with actual WhatsApp number
+            const message = `Hallo! Ik ben geïnteresseerd in een ${theme}. Ik vond deze taart mooi: ${imageName}`;
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+</script>
 </body>
 </html>

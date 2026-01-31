@@ -174,14 +174,14 @@
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            gap: 1.5rem;
+            gap: 0;
         }
         
         .gallery-item {
             position: relative;
             aspect-ratio: 1;
             overflow: hidden;
-            border-radius: 12px;
+            border-radius: 0;
             box-shadow: 0 4px 12px rgba(74, 52, 40, 0.1);
             cursor: pointer;
             transition: all 0.3s ease;
@@ -374,23 +374,23 @@
     <!-- Gallery Section -->
     <section class="gallery-section">
         <div class="gallery-grid">
-            <div class="gallery-item" onclick="openLightbox(0)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/601374526_18067755815622428_8657672127207954385_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=zuSV2k0zh8MQ7kNvwHQ19gm&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Afv7sGB7UPWlHf_DpeN8_pO60z06AVU_hSEnPeSLwAO9gQ&oe=69841169&_nc_sid=8b3546" alt="Baby & Gender Reveal 1" loading="lazy">
+            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_07_ec45e0df.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_07_ec45e0df.jpg" alt="Baby & Gender Reveal 1" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(1)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/600474899_18067685516622428_6482054714287618329_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=FszRerOWn04Q7kNvwGXBq_T&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfuQM-g45xFWV70F_NzkarizKJsDKqfxH8KjdavI7CFQtQ&oe=698402FF&_nc_sid=8b3546" alt="Baby & Gender Reveal 2" loading="lazy">
+            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_08_2eab005e.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_08_2eab005e.jpg" alt="Baby & Gender Reveal 2" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(2)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/589310704_18067652993622428_4739013805366182394_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=Ty0xjP6J0kUQ7kNvwFlMrWI&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfvDNccHz4AuLaJwThB7on6DX8HONm094eIiJqcK1CKlpQ&oe=6983F276&_nc_sid=8b3546" alt="Baby & Gender Reveal 3" loading="lazy">
+            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_09_62f586b2.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_09_62f586b2.jpg" alt="Baby & Gender Reveal 3" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(3)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/590426446_18066631658622428_5054535703968332641_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=zL8age87vYAQ7kNvwGAmOik&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfvzZPbczOCs8zGhkc3pAzaEY8_byzXoCSNv7Yh3HWRNZw&oe=6983FE1A&_nc_sid=8b3546" alt="Baby & Gender Reveal 4" loading="lazy">
+            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_10_16a4549f.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_10_16a4549f.jpg" alt="Baby & Gender Reveal 4" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(4)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/588615292_18066354365622428_8224121175578034562_n.jpg?stp=dst-jpg_e35_s640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=pb46UOB0JqEQ7kNvwHzQxNc&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfuH9vJza6SxPwG2JDdPWFzavywXKOA90bGIQDvEmBniOA&oe=6983ECBA&_nc_sid=8b3546" alt="Baby & Gender Reveal 5" loading="lazy">
+            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_11_2a045a85.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_11_2a045a85.jpg" alt="Baby & Gender Reveal 5" loading="lazy">
             </div>
-            <div class="gallery-item" onclick="openLightbox(5)">
-                <img src="https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/587790037_18066353999622428_2101906664731495133_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=-Lmr-Vs5jUcQ7kNvwElIYXU&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AftZFoDmZPaI6OE4bvtTS4xProB7MFLvXayC1M70__gtNw&oe=69841819&_nc_sid=8b3546" alt="Baby & Gender Reveal 6" loading="lazy">
+            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_12_0db1e329.jpg" onclick="handleTileClick(this)">
+                <img src="images/instagram_12_0db1e329.jpg" alt="Baby & Gender Reveal 6" loading="lazy">
             </div>
         </div>
     </section>
@@ -439,12 +439,12 @@
 
     <script>
         const images = [
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/601374526_18067755815622428_8657672127207954385_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=zuSV2k0zh8MQ7kNvwHQ19gm&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_Afv7sGB7UPWlHf_DpeN8_pO60z06AVU_hSEnPeSLwAO9gQ&oe=69841169&_nc_sid=8b3546",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/600474899_18067685516622428_6482054714287618329_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=FszRerOWn04Q7kNvwGXBq_T&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfuQM-g45xFWV70F_NzkarizKJsDKqfxH8KjdavI7CFQtQ&oe=698402FF&_nc_sid=8b3546",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/589310704_18067652993622428_4739013805366182394_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=Ty0xjP6J0kUQ7kNvwFlMrWI&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfvDNccHz4AuLaJwThB7on6DX8HONm094eIiJqcK1CKlpQ&oe=6983F276&_nc_sid=8b3546",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/590426446_18066631658622428_5054535703968332641_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=zL8age87vYAQ7kNvwGAmOik&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfvzZPbczOCs8zGhkc3pAzaEY8_byzXoCSNv7Yh3HWRNZw&oe=6983FE1A&_nc_sid=8b3546",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/588615292_18066354365622428_8224121175578034562_n.jpg?stp=dst-jpg_e35_s640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=pb46UOB0JqEQ7kNvwHzQxNc&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfuH9vJza6SxPwG2JDdPWFzavywXKOA90bGIQDvEmBniOA&oe=6983ECBA&_nc_sid=8b3546",
-            "https://scontent-den2-1.cdninstagram.com/v/t51.2885-15/587790037_18066353999622428_2101906664731495133_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08_tt6&_nc_ht=scontent-den2-1.cdninstagram.com&_nc_cat=108&_nc_oc=Q6cZ2QHddogEFP-TZWoH3ttT0ko1hwXWTyhmAAgST1BjStGF9Xlvc8kItIM2I85sifOGaGs&_nc_ohc=-Lmr-Vs5jUcQ7kNvwElIYXU&_nc_gid=FWG6GAEPP04ZLaa3rPItqw&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AftZFoDmZPaI6OE4bvtTS4xProB7MFLvXayC1M70__gtNw&oe=69841819&_nc_sid=8b3546"
+            "images/instagram_07_ec45e0df.jpg",
+            "images/instagram_08_2eab005e.jpg",
+            "images/instagram_09_62f586b2.jpg",
+            "images/instagram_10_16a4549f.jpg",
+            "images/instagram_11_2a045a85.jpg",
+            "images/instagram_12_0db1e329.jpg"
 ];
         let currentImageIndex = 0;
         
@@ -484,6 +484,17 @@
                 if (e.key === 'ArrowRight') navigateLightbox(1, e);
             }
         });
-    </script>
+    
+        
+        // Handle tile click to open WhatsApp
+        function handleTileClick(element) {
+            const theme = element.getAttribute('data-theme');
+            const imageName = element.getAttribute('data-image');
+            const phoneNumber = '31612345678'; // Replace with actual WhatsApp number
+            const message = `Hallo! Ik ben geïnteresseerd in een ${theme}. Ik vond deze taart mooi: ${imageName}`;
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+</script>
 </body>
 </html>
