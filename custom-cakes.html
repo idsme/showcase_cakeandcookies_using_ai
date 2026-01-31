@@ -336,6 +336,31 @@
                 font-size: 1.5rem;
             }
         }
+            
+        .likes-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover .likes-overlay {
+            opacity: 1;
+        }
+        
+        .likes-overlay i {
+            color: #ff4458;
+        }
+
     </style>
 </head>
 <body>
@@ -374,23 +399,264 @@
     <!-- Gallery Section -->
     <section class="gallery-section">
         <div class="gallery-grid">
-            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_19_bca012b8.jpg" onclick="handleTileClick(this)">
-                <img src="images/instagram_19_bca012b8.jpg" alt="Maatwerk Taarten 1" loading="lazy">
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_004_ff113b90.jpg" data-likes="4" onclick="handleTileClick(this)">
+                <img src="images/instagram_004_ff113b90.jpg" alt="Maatwerk Taarten 1" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 4 likes
+                </div>
             </div>
-            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_20_15bc4985.jpg" onclick="handleTileClick(this)">
-                <img src="images/instagram_20_15bc4985.jpg" alt="Maatwerk Taarten 2" loading="lazy">
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_012_d932275c.jpg" data-likes="4" onclick="handleTileClick(this)">
+                <img src="images/instagram_012_d932275c.jpg" alt="Maatwerk Taarten 2" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 4 likes
+                </div>
             </div>
-            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_21_500f62a8.jpg" onclick="handleTileClick(this)">
-                <img src="images/instagram_21_500f62a8.jpg" alt="Maatwerk Taarten 3" loading="lazy">
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_013_2aa85372.jpg" data-likes="5" onclick="handleTileClick(this)">
+                <img src="images/instagram_013_2aa85372.jpg" alt="Maatwerk Taarten 3" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 5 likes
+                </div>
             </div>
-            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_22_05e3e50c.jpg" onclick="handleTileClick(this)">
-                <img src="images/instagram_22_05e3e50c.jpg" alt="Maatwerk Taarten 4" loading="lazy">
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_014_f1628207.jpg" data-likes="6" onclick="handleTileClick(this)">
+                <img src="images/instagram_014_f1628207.jpg" alt="Maatwerk Taarten 4" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 6 likes
+                </div>
             </div>
-            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_23_20c7c661.jpg" onclick="handleTileClick(this)">
-                <img src="images/instagram_23_20c7c661.jpg" alt="Maatwerk Taarten 5" loading="lazy">
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_015_7a6988f0.jpg" data-likes="5" onclick="handleTileClick(this)">
+                <img src="images/instagram_015_7a6988f0.jpg" alt="Maatwerk Taarten 5" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 5 likes
+                </div>
             </div>
-            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_24_0355d60d.jpg" onclick="handleTileClick(this)">
-                <img src="images/instagram_24_0355d60d.jpg" alt="Maatwerk Taarten 6" loading="lazy">
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_016_341314e3.jpg" data-likes="8" onclick="handleTileClick(this)">
+                <img src="images/instagram_016_341314e3.jpg" alt="Maatwerk Taarten 6" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 8 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_029_49278ba9.jpg" data-likes="12" onclick="handleTileClick(this)">
+                <img src="images/instagram_029_49278ba9.jpg" alt="Maatwerk Taarten 7" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 12 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_033_4ffba3bf.jpg" data-likes="12" onclick="handleTileClick(this)">
+                <img src="images/instagram_033_4ffba3bf.jpg" alt="Maatwerk Taarten 8" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 12 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_034_9e1dd38d.jpg" data-likes="16" onclick="handleTileClick(this)">
+                <img src="images/instagram_034_9e1dd38d.jpg" alt="Maatwerk Taarten 9" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 16 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_035_26ea315b.jpg" data-likes="13" onclick="handleTileClick(this)">
+                <img src="images/instagram_035_26ea315b.jpg" alt="Maatwerk Taarten 10" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 13 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_036_b18a099e.jpg" data-likes="12" onclick="handleTileClick(this)">
+                <img src="images/instagram_036_b18a099e.jpg" alt="Maatwerk Taarten 11" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 12 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_037_feae063d.jpg" data-likes="11" onclick="handleTileClick(this)">
+                <img src="images/instagram_037_feae063d.jpg" alt="Maatwerk Taarten 12" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 11 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_042_92b4f697.jpg" data-likes="24" onclick="handleTileClick(this)">
+                <img src="images/instagram_042_92b4f697.jpg" alt="Maatwerk Taarten 13" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 24 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_048_74f929e3.jpg" data-likes="8" onclick="handleTileClick(this)">
+                <img src="images/instagram_048_74f929e3.jpg" alt="Maatwerk Taarten 14" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 8 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_049_f22f9f1d.jpg" data-likes="13" onclick="handleTileClick(this)">
+                <img src="images/instagram_049_f22f9f1d.jpg" alt="Maatwerk Taarten 15" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 13 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_050_85c335af.jpg" data-likes="10" onclick="handleTileClick(this)">
+                <img src="images/instagram_050_85c335af.jpg" alt="Maatwerk Taarten 16" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 10 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_052_b14447b8.jpg" data-likes="10" onclick="handleTileClick(this)">
+                <img src="images/instagram_052_b14447b8.jpg" alt="Maatwerk Taarten 17" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 10 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_053_a78cbfd4.jpg" data-likes="10" onclick="handleTileClick(this)">
+                <img src="images/instagram_053_a78cbfd4.jpg" alt="Maatwerk Taarten 18" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 10 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_054_67ce383c.jpg" data-likes="11" onclick="handleTileClick(this)">
+                <img src="images/instagram_054_67ce383c.jpg" alt="Maatwerk Taarten 19" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 11 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_078_835a5a74.jpg" data-likes="16" onclick="handleTileClick(this)">
+                <img src="images/instagram_078_835a5a74.jpg" alt="Maatwerk Taarten 20" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 16 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_080_829f8b33.jpg" data-likes="22" onclick="handleTileClick(this)">
+                <img src="images/instagram_080_829f8b33.jpg" alt="Maatwerk Taarten 21" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 22 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_087_82f2c772.jpg" data-likes="23" onclick="handleTileClick(this)">
+                <img src="images/instagram_087_82f2c772.jpg" alt="Maatwerk Taarten 22" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 23 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_112_bec924e3.jpg" data-likes="23" onclick="handleTileClick(this)">
+                <img src="images/instagram_112_bec924e3.jpg" alt="Maatwerk Taarten 23" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 23 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_113_d85fb24e.jpg" data-likes="17" onclick="handleTileClick(this)">
+                <img src="images/instagram_113_d85fb24e.jpg" alt="Maatwerk Taarten 24" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 17 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_114_201b12c2.jpg" data-likes="18" onclick="handleTileClick(this)">
+                <img src="images/instagram_114_201b12c2.jpg" alt="Maatwerk Taarten 25" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 18 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_115_6a933360.jpg" data-likes="13" onclick="handleTileClick(this)">
+                <img src="images/instagram_115_6a933360.jpg" alt="Maatwerk Taarten 26" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 13 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_132_30b4908d.jpg" data-likes="16" onclick="handleTileClick(this)">
+                <img src="images/instagram_132_30b4908d.jpg" alt="Maatwerk Taarten 27" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 16 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_138_16b0972b.jpg" data-likes="11" onclick="handleTileClick(this)">
+                <img src="images/instagram_138_16b0972b.jpg" alt="Maatwerk Taarten 28" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 11 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_188_e30a33b1.jpg" data-likes="19" onclick="handleTileClick(this)">
+                <img src="images/instagram_188_e30a33b1.jpg" alt="Maatwerk Taarten 29" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 19 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_191_b561a1dd.jpg" data-likes="14" onclick="handleTileClick(this)">
+                <img src="images/instagram_191_b561a1dd.jpg" alt="Maatwerk Taarten 30" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 14 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_208_b8d64365.jpg" data-likes="9" onclick="handleTileClick(this)">
+                <img src="images/instagram_208_b8d64365.jpg" alt="Maatwerk Taarten 31" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 9 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_212_e5b9d321.jpg" data-likes="13" onclick="handleTileClick(this)">
+                <img src="images/instagram_212_e5b9d321.jpg" alt="Maatwerk Taarten 32" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 13 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_219_f5fc5643.jpg" data-likes="7" onclick="handleTileClick(this)">
+                <img src="images/instagram_219_f5fc5643.jpg" alt="Maatwerk Taarten 33" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 7 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_224_a3a24150.jpg" data-likes="8" onclick="handleTileClick(this)">
+                <img src="images/instagram_224_a3a24150.jpg" alt="Maatwerk Taarten 34" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 8 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_225_5f0ac18c.jpg" data-likes="7" onclick="handleTileClick(this)">
+                <img src="images/instagram_225_5f0ac18c.jpg" alt="Maatwerk Taarten 35" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 7 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_226_53e42db4.jpg" data-likes="8" onclick="handleTileClick(this)">
+                <img src="images/instagram_226_53e42db4.jpg" alt="Maatwerk Taarten 36" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 8 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Maatwerk Taarten" data-image="instagram_228_5c8f46ac.jpg" data-likes="8" onclick="handleTileClick(this)">
+                <img src="images/instagram_228_5c8f46ac.jpg" alt="Maatwerk Taarten 37" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 8 likes
+                </div>
             </div>
         </div>
     </section>
@@ -490,7 +756,7 @@
         function handleTileClick(element) {
             const theme = element.getAttribute('data-theme');
             const imageName = element.getAttribute('data-image');
-            const phoneNumber = '31612345678'; // Replace with actual WhatsApp number
+            const phoneNumber = '31634191203'; // Replace with actual WhatsApp number
             const message = `Hallo! Ik ben geïnteresseerd in een ${theme}. Ik vond deze taart mooi: ${imageName}`;
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');

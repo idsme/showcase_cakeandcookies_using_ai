@@ -336,6 +336,31 @@
                 font-size: 1.5rem;
             }
         }
+            
+        .likes-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover .likes-overlay {
+            opacity: 1;
+        }
+        
+        .likes-overlay i {
+            color: #ff4458;
+        }
+
     </style>
 </head>
 <body>
@@ -374,23 +399,145 @@
     <!-- Gallery Section -->
     <section class="gallery-section">
         <div class="gallery-grid">
-            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_01_18533427.jpg" onclick="handleTileClick(this)">
-                <img src="images/instagram_01_18533427.jpg" alt="Thema & Karakter Taarten 1" loading="lazy">
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_005_d1c2840d.jpg" data-likes="8" onclick="handleTileClick(this)">
+                <img src="images/instagram_005_d1c2840d.jpg" alt="Thema & Karakter Taarten 1" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 8 likes
+                </div>
             </div>
-            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_02_9fcf053a.jpg" onclick="handleTileClick(this)">
-                <img src="images/instagram_02_9fcf053a.jpg" alt="Thema & Karakter Taarten 2" loading="lazy">
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_051_762a26f9.jpg" data-likes="10" onclick="handleTileClick(this)">
+                <img src="images/instagram_051_762a26f9.jpg" alt="Thema & Karakter Taarten 2" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 10 likes
+                </div>
             </div>
-            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_03_756d1531.jpg" onclick="handleTileClick(this)">
-                <img src="images/instagram_03_756d1531.jpg" alt="Thema & Karakter Taarten 3" loading="lazy">
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_099_e77ffc9c.jpg" data-likes="21" onclick="handleTileClick(this)">
+                <img src="images/instagram_099_e77ffc9c.jpg" alt="Thema & Karakter Taarten 3" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 21 likes
+                </div>
             </div>
-            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_04_ab983036.jpg" onclick="handleTileClick(this)">
-                <img src="images/instagram_04_ab983036.jpg" alt="Thema & Karakter Taarten 4" loading="lazy">
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_102_d9071866.jpg" data-likes="16" onclick="handleTileClick(this)">
+                <img src="images/instagram_102_d9071866.jpg" alt="Thema & Karakter Taarten 4" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 16 likes
+                </div>
             </div>
-            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_05_06a9e21c.jpg" onclick="handleTileClick(this)">
-                <img src="images/instagram_05_06a9e21c.jpg" alt="Thema & Karakter Taarten 5" loading="lazy">
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_109_ab7ab5a9.jpg" data-likes="15" onclick="handleTileClick(this)">
+                <img src="images/instagram_109_ab7ab5a9.jpg" alt="Thema & Karakter Taarten 5" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 15 likes
+                </div>
             </div>
-            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_06_3373e521.jpg" onclick="handleTileClick(this)">
-                <img src="images/instagram_06_3373e521.jpg" alt="Thema & Karakter Taarten 6" loading="lazy">
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_135_a8aeae75.jpg" data-likes="12" onclick="handleTileClick(this)">
+                <img src="images/instagram_135_a8aeae75.jpg" alt="Thema & Karakter Taarten 6" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 12 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_175_b1489202.jpg" data-likes="14" onclick="handleTileClick(this)">
+                <img src="images/instagram_175_b1489202.jpg" alt="Thema & Karakter Taarten 7" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 14 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_179_1185fb7e.jpg" data-likes="13" onclick="handleTileClick(this)">
+                <img src="images/instagram_179_1185fb7e.jpg" alt="Thema & Karakter Taarten 8" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 13 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_180_719b659e.jpg" data-likes="15" onclick="handleTileClick(this)">
+                <img src="images/instagram_180_719b659e.jpg" alt="Thema & Karakter Taarten 9" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 15 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_210_155b453e.jpg" data-likes="11" onclick="handleTileClick(this)">
+                <img src="images/instagram_210_155b453e.jpg" alt="Thema & Karakter Taarten 10" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 11 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_211_c01eb10f.jpg" data-likes="21" onclick="handleTileClick(this)">
+                <img src="images/instagram_211_c01eb10f.jpg" alt="Thema & Karakter Taarten 11" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 21 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_213_d1f521e6.jpg" data-likes="9" onclick="handleTileClick(this)">
+                <img src="images/instagram_213_d1f521e6.jpg" alt="Thema & Karakter Taarten 12" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 9 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_214_d4e58cc3.jpg" data-likes="7" onclick="handleTileClick(this)">
+                <img src="images/instagram_214_d4e58cc3.jpg" alt="Thema & Karakter Taarten 13" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 7 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_216_b756ee2d.jpg" data-likes="10" onclick="handleTileClick(this)">
+                <img src="images/instagram_216_b756ee2d.jpg" alt="Thema & Karakter Taarten 14" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 10 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_217_fcd2896d.jpg" data-likes="6" onclick="handleTileClick(this)">
+                <img src="images/instagram_217_fcd2896d.jpg" alt="Thema & Karakter Taarten 15" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 6 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_218_8a155fdb.jpg" data-likes="7" onclick="handleTileClick(this)">
+                <img src="images/instagram_218_8a155fdb.jpg" alt="Thema & Karakter Taarten 16" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 7 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_221_d58430c7.jpg" data-likes="13" onclick="handleTileClick(this)">
+                <img src="images/instagram_221_d58430c7.jpg" alt="Thema & Karakter Taarten 17" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 13 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_222_6f1718f5.jpg" data-likes="9" onclick="handleTileClick(this)">
+                <img src="images/instagram_222_6f1718f5.jpg" alt="Thema & Karakter Taarten 18" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 9 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_223_bc30d0ea.jpg" data-likes="6" onclick="handleTileClick(this)">
+                <img src="images/instagram_223_bc30d0ea.jpg" alt="Thema & Karakter Taarten 19" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 6 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Thema & Karakter Taarten" data-image="instagram_227_29a7ea64.jpg" data-likes="11" onclick="handleTileClick(this)">
+                <img src="images/instagram_227_29a7ea64.jpg" alt="Thema & Karakter Taarten 20" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 11 likes
+                </div>
             </div>
         </div>
     </section>
@@ -490,7 +637,7 @@
         function handleTileClick(element) {
             const theme = element.getAttribute('data-theme');
             const imageName = element.getAttribute('data-image');
-            const phoneNumber = '31612345678'; // Replace with actual WhatsApp number
+            const phoneNumber = '31634191203'; // Replace with actual WhatsApp number
             const message = `Hallo! Ik ben geïnteresseerd in een ${theme}. Ik vond deze taart mooi: ${imageName}`;
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');

@@ -1,0 +1,74 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/github_repos/showcase_cakeandcookies/scrape_instagram_with_scroll.py", line 146, in scrape_instagram_profile
+    driver = setup_driver()
+             ^^^^^^^^^^^^^^
+  File "/home/ubuntu/github_repos/showcase_cakeandcookies/scrape_instagram_with_scroll.py", line 30, in setup_driver
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/computersetup/.pyenv/versions/3.11.6/lib/python3.11/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/opt/computersetup/.pyenv/versions/3.11.6/lib/python3.11/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/opt/computersetup/.pyenv/versions/3.11.6/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 250, in __init__
+    self.start_session(capabilities)
+  File "/opt/computersetup/.pyenv/versions/3.11.6/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 342, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/computersetup/.pyenv/versions/3.11.6/lib/python3.11/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/opt/computersetup/.pyenv/versions/3.11.6/lib/python3.11/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 144
+Current browser version is 143.0.7499.4 with binary path /usr/local/bin/chrome
+Stacktrace:
+#0 0x564f1bd2b4ba <unknown>
+#1 0x564f1b794492 <unknown>
+#2 0x564f1b7d87bf <unknown>
+#3 0x564f1b7d7580 <unknown>
+#4 0x564f1b7d2a30 <unknown>
+#5 0x564f1b7cccf9 <unknown>
+#6 0x564f1b81efce <unknown>
+#7 0x564f1b81e6bc <unknown>
+#8 0x564f1b7db6a2 <unknown>
+#9 0x564f1b7dc491 <unknown>
+#10 0x564f1bcf1479 <unknown>
+#11 0x564f1bcf4391 <unknown>
+#12 0x564f1bcdda89 <unknown>
+#13 0x564f1bcf4f4e <unknown>
+#14 0x564f1bcc4070 <unknown>
+#15 0x564f1bd18ca8 <unknown>
+#16 0x564f1bd18e78 <unknown>
+#17 0x564f1bd2a828 <unknown>
+#18 0x7fbdf3d6b1f5 <unknown>
+
+============================================================
+Instagram Profile Scraper with Infinite Scroll
+============================================================
+Error during scraping: Message: session not created: This version of ChromeDriver only supports Chrome version 144
+Current browser version is 143.0.7499.4 with binary path /usr/local/bin/chrome
+Stacktrace:
+#0 0x564f1bd2b4ba <unknown>
+#1 0x564f1b794492 <unknown>
+#2 0x564f1b7d87bf <unknown>
+#3 0x564f1b7d7580 <unknown>
+#4 0x564f1b7d2a30 <unknown>
+#5 0x564f1b7cccf9 <unknown>
+#6 0x564f1b81efce <unknown>
+#7 0x564f1b81e6bc <unknown>
+#8 0x564f1b7db6a2 <unknown>
+#9 0x564f1b7dc491 <unknown>
+#10 0x564f1bcf1479 <unknown>
+#11 0x564f1bcf4391 <unknown>
+#12 0x564f1bcdda89 <unknown>
+#13 0x564f1bcf4f4e <unknown>
+#14 0x564f1bcc4070 <unknown>
+#15 0x564f1bd18ca8 <unknown>
+#16 0x564f1bd18e78 <unknown>
+#17 0x564f1bd2a828 <unknown>
+#18 0x7fbdf3d6b1f5 <unknown>
+
+
+❌ No posts found. This could be due to:
+   - Instagram blocking automated access
+   - Profile is private
+   - Network issues
