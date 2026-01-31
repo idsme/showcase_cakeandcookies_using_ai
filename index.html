@@ -726,7 +726,7 @@
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
         
@@ -1409,10 +1409,11 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Galerij</a></li>
-                <li><a href="#services">Themataarten</a></li>
+                <li><a href="character-cakes.html">Thema Taarten</a></li>
+                <li><a href="gender-reveal.html">Gender Reveal</a></li>
+                <li><a href="birthday-cakes.html">Verjaardagstaarten</a></li>
+                <li><a href="custom-cakes.html">Maatwerk</a></li>
                 <li><a href="#pricing">Prijzen</a></li>
-                <li><a href="#testimonials">Reviews</a></li>
                 <a href="https://wa.me/31634191203?text=Normale bestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" style="background:var(--hot-pink)" class="nav-cta btn-rush" target="_blank">
                     <i class="ph-fill ph-lightning"></i>
                     Bestellen
@@ -1590,7 +1591,7 @@
             <p class="section-subtitle">Van intieme feestjes tot grote vieringen</p>
         </div>
         <div class="services-grid">
-            <div class="service-card fade-in">
+            <div class="service-card fade-in" onclick="window.location.href='birthday-cakes.html'" style="cursor: pointer;">
                 <div class="service-image-wrapper">
                     <img src="images/mile-stone-16-girl.jpg" class="service-image" alt="Verjaardagstaart">
                     <span class="service-badge">Populair</span>
@@ -1598,14 +1599,20 @@
                 <div class="service-content">
                     <h3>Verjaardagstaarten</h3>
                     <p>Vier in stijl met een taart op maat. Elk thema, elke leeftijd—wij maken jouw droom waar.</p>
-                    <a href="https://wa.me/31634191203?text=Normale bestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" style="text-decoration: none" class="nav-cta btn-rush" target="_blank">
-                        <i class="ph-fill ph-lightning"></i>
-                        Bestellen
-                    </a>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="birthday-cakes.html" style="text-decoration: none; flex: 1;" class="nav-cta" onclick="event.stopPropagation();">
+                            <i class="ph-fill ph-images"></i>
+                            Bekijk Galerij
+                        </a>
+                        <a href="https://wa.me/31634191203?text=Normale bestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" style="text-decoration: none; flex: 1;" class="nav-cta btn-rush" target="_blank" onclick="event.stopPropagation();">
+                            <i class="ph-fill ph-lightning"></i>
+                            Bestellen
+                        </a>
+                    </div>
                 </div>
             </div>
             
-            <div class="service-card fade-in">
+            <div class="service-card fade-in" onclick="window.location.href='gender-reveal.html'" style="cursor: pointer;">
                 <div class="service-image-wrapper">
                     <img src="images/theme-cake-baby-shower-girl.jpg" class="service-image" alt="Babyshower taart">
                     <span class="service-badge">Trending</span>
@@ -1613,13 +1620,19 @@
                 <div class="service-content">
                     <h3>Baby & Gender Reveal</h3>
                     <p>Maak de aankondiging onvergetelijk met een prachtige, gepersonaliseerde taart.</p>
-                    <a href="https://wa.me/31634191203?text=Normale bestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" style="text-decoration: none" class="nav-cta btn-rush" target="_blank">
-                        <i class="ph-fill ph-lightning"></i>
-                        Bestellen
-                    </a>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="gender-reveal.html" style="text-decoration: none; flex: 1;" class="nav-cta" onclick="event.stopPropagation();">
+                            <i class="ph-fill ph-images"></i>
+                            Bekijk Galerij
+                        </a>
+                        <a href="https://wa.me/31634191203?text=Normale bestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" style="text-decoration: none; flex: 1;" class="nav-cta btn-rush" target="_blank" onclick="event.stopPropagation();">
+                            <i class="ph-fill ph-lightning"></i>
+                            Bestellen
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="service-card fade-in">
+            <div class="service-card fade-in" onclick="window.location.href='character-cakes.html'" style="cursor: pointer;">
                 <div class="service-image-wrapper">
                     <img src="images/theme-cake-nijntje.jpg" class="service-image" alt="Thema taart">
                     <span class="service-badge">Kids Favoriet</span>
@@ -1627,10 +1640,36 @@
                 <div class="service-content">
                     <h3>Thema & Karakter</h3>
                     <p>Paw Patrol, Pokemon, Frozen of Nijntje—hun favoriete karakters tot leven gebracht.</p>
-                    <a href="https://wa.me/31634191203?text=Normale bestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" style="text-decoration: none" class="nav-cta btn-rush" target="_blank">
-                        <i class="ph-fill ph-lightning"></i>
-                        Bestellen
-                    </a>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="character-cakes.html" style="text-decoration: none; flex: 1;" class="nav-cta" onclick="event.stopPropagation();">
+                            <i class="ph-fill ph-images"></i>
+                            Bekijk Galerij
+                        </a>
+                        <a href="https://wa.me/31634191203?text=Normale bestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" style="text-decoration: none; flex: 1;" class="nav-cta btn-rush" target="_blank" onclick="event.stopPropagation();">
+                            <i class="ph-fill ph-lightning"></i>
+                            Bestellen
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-in" onclick="window.location.href='custom-cakes.html'" style="cursor: pointer;">
+                <div class="service-image-wrapper">
+                    <img src="images/mile-stone-80-woman.jpeg" class="service-image" alt="Maatwerk taart">
+                    <span class="service-badge">Uniek</span>
+                </div>
+                <div class="service-content">
+                    <h3>Maatwerk Taarten</h3>
+                    <p>Volledig gepersonaliseerde taarten op maat—vertel ons jouw idee en wij maken het waar.</p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="custom-cakes.html" style="text-decoration: none; flex: 1;" class="nav-cta" onclick="event.stopPropagation();">
+                            <i class="ph-fill ph-images"></i>
+                            Bekijk Galerij
+                        </a>
+                        <a href="https://wa.me/31634191203?text=Normale bestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" style="text-decoration: none; flex: 1;" class="nav-cta btn-rush" target="_blank" onclick="event.stopPropagation();">
+                            <i class="ph-fill ph-lightning"></i>
+                            Bestellen
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
