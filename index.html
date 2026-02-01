@@ -154,8 +154,9 @@
         .nav-cta {
             background: var(--hot-pink);
             color: white !important;
-            padding: 0.6rem 1.5rem;
+            padding: 0.4rem 1rem;
             border-radius: 50px;
+            font-size: 0.8rem;
             font-weight: 600 !important;
             transition: all 0.3s ease !important;
         }
@@ -163,8 +164,9 @@
         .nav-cta-spoed {
             background: var(--gold);
             color: white !important;
-            padding: 0.6rem 1.5rem;
+            padding: 0.4rem 1rem;
             border-radius: 50px;
+            font-size: 0.8rem;
             font-weight: 600 !important;
             transition: all 0.3s ease !important;
         }
@@ -1111,7 +1113,7 @@
         .btn-rush {
             background: linear-gradient(135deg, var(--gold), var(--warm-taupe));
             color: white;
-            font-size: 1rem;
+            font-size: 0.8rem;
             box-shadow: 0 4px 20px rgba(0,0,0,0.2);
             position: relative;
             overflow: hidden;
@@ -1571,9 +1573,9 @@
      </div>
     </div>
     <div class="hero-images">
-     <img alt="Elegante verjaardagstaart met gouden en roze decoraties" class="hero-image-main" src="images/theme-cake-baby-shower-girl.jpg"/>
-     <img alt="Babyshower taart" class="hero-image-float top" src="images/heart-cake.jpeg"/>
-     <img alt="Paw Patrol kindertaart" class="hero-image-float bottom" src="images/theme-cake-paw-patrol.jpg"/>
+     <img alt="Theme Cake Baby" class="hero-image-main" src="images/theme-cake-baby.jpg"/>
+     <img alt="Hart Cake Taart" class="hero-image-float top" src="images/hart-cake-taart.jpeg"/>
+     <img alt="Theme Cake Paw" class="hero-image-float bottom" src="images/theme-cake-paw.jpg"/>
     </div>
    </div>
   </section>
@@ -1643,8 +1645,8 @@
     </p>
    </div>
    <div class="gallery-grid">
-    <div class="gallery-item fade-in" onclick="openLightbox('images/verjaardag-goud-2.jpg')">
-     <img alt="Verjaardag Goud 2" loading="lazy" src="images/verjaardag-goud-2.jpg"/>
+     <div class="gallery-item fade-in" data-image="verjaardag-goud-taart.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Verjaardag Goud Taart" loading="lazy" src="images/verjaardag-goud-taart.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Verjaardag Goud 2
@@ -1654,8 +1656,8 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/verjaardag-drip-10.jpg')">
-     <img alt="Verjaardag Drip 10" loading="lazy" src="images/verjaardag-drip-10.jpg"/>
+     <div class="gallery-item fade-in" data-image="verjaardag-drip-taart.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Verjaardag Drip Taart" loading="lazy" src="images/verjaardag-drip-taart.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Verjaardag Drip 10
@@ -1665,8 +1667,8 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/verjaardag-drip-15.jpg')">
-     <img alt="Verjaardag Drip 15" loading="lazy" src="images/verjaardag-drip-15.jpg"/>
+     <div class="gallery-item fade-in" data-image="verjaardag-drip-taart-15.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Verjaardag Drip Taart 15" loading="lazy" src="images/verjaardag-drip-taart-15.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Verjaardag Drip 15
@@ -1676,8 +1678,8 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/bruiloft-3.jpg')">
-     <img alt="Bruiloft 3" loading="lazy" src="images/bruiloft-3.jpg"/>
+     <div class="gallery-item fade-in" data-image="bruiloft-speciale-taart-3.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Bruiloft Speciale Taart 3" loading="lazy" src="images/bruiloft-speciale-taart-3.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Bruiloft 3
@@ -1687,8 +1689,8 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/bruiloft-2.jpg')">
-     <img alt="Bruiloft 2" loading="lazy" src="images/bruiloft-2.jpg"/>
+     <div class="gallery-item fade-in" data-image="bruiloft-speciale-taart.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Bruiloft Speciale Taart" loading="lazy" src="images/bruiloft-speciale-taart.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Bruiloft 2
@@ -1698,8 +1700,8 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/baby-drip.jpg')">
-     <img alt="Baby Drip" loading="lazy" src="images/baby-drip.jpg"/>
+     <div class="gallery-item fade-in" data-image="baby-drip-taart.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Baby Drip Taart" loading="lazy" src="images/baby-drip-taart.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Baby Drip
@@ -1709,8 +1711,8 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/pokemon-verjaardag-drip.jpg')">
-     <img alt="Pokemon Verjaardag Drip" loading="lazy" src="images/pokemon-verjaardag-drip.jpg"/>
+     <div class="gallery-item fade-in" data-image="pokemon-verjaardag-drip-1.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Pokemon Verjaardag Drip 1" loading="lazy" src="images/pokemon-verjaardag-drip-1.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Pokemon Verjaardag Drip
@@ -1720,7 +1722,7 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/prinses-verjaardag-drip.jpg')">
+     <div class="gallery-item fade-in" data-image="prinses-verjaardag-drip.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
      <img alt="Prinses Verjaardag Drip" loading="lazy" src="images/prinses-verjaardag-drip.jpg"/>
      <div class="gallery-overlay">
       <h4>
@@ -1731,8 +1733,8 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/verjaardag-drip-14.jpg')">
-     <img alt="Verjaardag Drip 14" loading="lazy" src="images/verjaardag-drip-14.jpg"/>
+     <div class="gallery-item fade-in" data-image="verjaardag-drip-taart-14.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Verjaardag Drip Taart 14" loading="lazy" src="images/verjaardag-drip-taart-14.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Verjaardag Drip 14
@@ -1742,8 +1744,8 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/drip-13.jpg')">
-     <img alt="Drip 13" loading="lazy" src="images/drip-13.jpg"/>
+     <div class="gallery-item fade-in" data-image="drip-speciale-taart-13.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Drip Speciale Taart 13" loading="lazy" src="images/drip-speciale-taart-13.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Drip 13
@@ -1753,8 +1755,8 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/verjaardag-drip-4.jpg')">
-     <img alt="Verjaardag Drip 4" loading="lazy" src="images/verjaardag-drip-4.jpg"/>
+     <div class="gallery-item fade-in" data-image="verjaardag-drip-taart-4.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Verjaardag Drip Taart 4" loading="lazy" src="images/verjaardag-drip-taart-4.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Verjaardag Drip 4
@@ -1764,8 +1766,8 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/verjaardag-16.jpg')">
-     <img alt="Verjaardag 16" loading="lazy" src="images/verjaardag-16.jpg"/>
+     <div class="gallery-item fade-in" data-image="verjaardag-speciale-taart-16.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Verjaardag Speciale Taart 16" loading="lazy" src="images/verjaardag-speciale-taart-16.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Verjaardag 16
@@ -1775,8 +1777,8 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/kerst-2.jpg')">
-     <img alt="Kerst 2" loading="lazy" src="images/kerst-2.jpg"/>
+     <div class="gallery-item fade-in" data-image="kerst-speciale-taart.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Kerst Speciale Taart" loading="lazy" src="images/kerst-speciale-taart.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Kerst 2
@@ -1786,8 +1788,8 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/give.jpg')">
-     <img alt="Give" loading="lazy" src="images/give.jpg"/>
+     <div class="gallery-item fade-in" data-image="give-speciale-taart.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Give Speciale Taart" loading="lazy" src="images/give-speciale-taart.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Give
@@ -1797,8 +1799,8 @@
       </span>
      </div>
     </div>
-    <div class="gallery-item fade-in" onclick="openLightbox('images/verjaardag-34.jpg')">
-     <img alt="Verjaardag 34" loading="lazy" src="images/verjaardag-34.jpg"/>
+     <div class="gallery-item fade-in" data-image="verjaardag-speciale-taart-34.jpg" data-theme="Speciale Taart" onclick="handleTileClick(this)">
+     <img alt="Verjaardag Speciale Taart 34" loading="lazy" src="images/verjaardag-speciale-taart-34.jpg"/>
      <div class="gallery-overlay">
       <h4>
        Verjaardag 34
@@ -1833,7 +1835,7 @@
    <div class="services-grid">
     <div class="service-card fade-in" onclick="window.location.href='birthday-cakes.html'" style="cursor: pointer;">
      <div class="service-image-wrapper">
-      <img alt="Verjaardagstaart" class="service-image" src="images/mile-stone-16-girl.jpg"/>
+      <img alt="Paw Patrol Verjaardag 1" class="service-image" src="images/paw-patrol-verjaardag-1.jpg"/>
       <span class="service-badge">
        Populair
       </span>
@@ -1861,7 +1863,7 @@
     </div>
     <div class="service-card fade-in" onclick="window.location.href='gender-reveal.html'" style="cursor: pointer;">
      <div class="service-image-wrapper">
-      <img alt="Babyshower taart" class="service-image" src="images/theme-cake-baby-shower-girl.jpg"/>
+      <img alt="Theme Cake Baby" class="service-image" src="images/theme-cake-baby.jpg"/>
       <span class="service-badge">
        Trending
       </span>
@@ -1889,7 +1891,7 @@
     </div>
     <div class="service-card fade-in" onclick="window.location.href='character-cakes.html'" style="cursor: pointer;">
      <div class="service-image-wrapper">
-      <img alt="Thema taart" class="service-image" src="images/theme-cake-nijntje.jpg"/>
+      <img alt="Theme Cake Nijntje" class="service-image" src="images/theme-cake-nijntje.jpg"/>
       <span class="service-badge">
        Kids Favoriet
       </span>
@@ -1917,7 +1919,7 @@
     </div>
     <div class="service-card fade-in" onclick="window.location.href='custom-cakes.html'" style="cursor: pointer;">
      <div class="service-image-wrapper">
-      <img alt="Maatwerk taart" class="service-image" src="images/mile-stone-80-woman.jpeg"/>
+      <img alt="Mile Stone Woman" class="service-image" src="images/mile-stone-woman.jpeg"/>
       <span class="service-badge">
        Uniek
       </span>
@@ -2338,6 +2340,18 @@
                 document.body.style.overflow = '';
             }
         });
+        
+        // Gallery tile click handler for WhatsApp
+        function handleTileClick(element) {
+            const theme = element.getAttribute('data-theme');
+            const imageName = element.getAttribute('data-image');
+            const imageAlt = element.querySelector('img')?.alt || imageName;
+            const descriptiveName = imageAlt;
+            const phoneNumber = '31634191203';
+            const message = `Hallo! Ik ben geïnteresseerd in een ${theme}. Ik vond deze taart mooi: ${descriptiveName}`;
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
   </script>
  </body>
 </html>
