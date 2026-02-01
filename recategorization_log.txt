@@ -1,0 +1,481 @@
+======================================================================
+Re-categorizing All Cake Images with Improved Logic
+======================================================================
+
+Total images to categorize: 228
+
+Analyzing each image with AI...
+
+1/228 Analyzing instagram_001_71a0517d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+2/228 Analyzing instagram_002_63c867ce.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+3/228 Analyzing instagram_003_32f1fe3b.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+4/228 Analyzing instagram_004_ff113b90.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+5/228 Analyzing instagram_005_d1c2840d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+6/228 Analyzing instagram_006_679b1fa6.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+7/228 Analyzing instagram_007_49e39381.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+8/228 Analyzing instagram_008_ffdedfce.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+9/228 Analyzing instagram_009_26bba1f0.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+10/228 Analyzing instagram_010_4d3a41f8.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+11/228 Analyzing instagram_011_c1f8525b.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+12/228 Analyzing instagram_012_d932275c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+13/228 Analyzing instagram_013_2aa85372.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+14/228 Analyzing instagram_014_f1628207.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+15/228 Analyzing instagram_015_7a6988f0.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+16/228 Analyzing instagram_016_341314e3.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+17/228 Analyzing instagram_017_a62913f2.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+18/228 Analyzing instagram_018_6b70979a.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+19/228 Analyzing instagram_019_a528e930.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+20/228 Analyzing instagram_020_8bafaa52.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+21/228 Analyzing instagram_021_8afb6bf5.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+22/228 Analyzing instagram_022_7efdc97c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+23/228 Analyzing instagram_023_8bc66ef3.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+24/228 Analyzing instagram_024_dfc28bf8.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+25/228 Analyzing instagram_025_2cf63b8f.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+26/228 Analyzing instagram_026_957e36af.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+27/228 Analyzing instagram_027_173e2e7e.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+28/228 Analyzing instagram_028_45fc22ab.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+29/228 Analyzing instagram_029_49278ba9.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+30/228 Analyzing instagram_030_fb8c540e.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+31/228 Analyzing instagram_031_8002cad9.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+32/228 Analyzing instagram_032_56250d24.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+33/228 Analyzing instagram_033_4ffba3bf.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+34/228 Analyzing instagram_034_9e1dd38d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+35/228 Analyzing instagram_035_26ea315b.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+36/228 Analyzing instagram_036_b18a099e.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+37/228 Analyzing instagram_037_feae063d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+38/228 Analyzing instagram_038_8f523505.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+39/228 Analyzing instagram_039_80030ce2.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+40/228 Analyzing instagram_040_008c941c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+41/228 Analyzing instagram_041_28633471.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+42/228 Analyzing instagram_042_92b4f697.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+43/228 Analyzing instagram_043_43ec1dc6.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+44/228 Analyzing instagram_044_215009a3.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+45/228 Analyzing instagram_045_6d24b448.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+46/228 Analyzing instagram_046_9adc8b8e.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+47/228 Analyzing instagram_047_c65ec791.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+48/228 Analyzing instagram_048_74f929e3.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+49/228 Analyzing instagram_049_f22f9f1d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+50/228 Analyzing instagram_050_85c335af.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+51/228 Analyzing instagram_051_762a26f9.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+52/228 Analyzing instagram_052_b14447b8.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+53/228 Analyzing instagram_053_a78cbfd4.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+54/228 Analyzing instagram_054_67ce383c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+55/228 Analyzing instagram_055_bc8e855f.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+56/228 Analyzing instagram_056_ae2f22a0.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+57/228 Analyzing instagram_057_eb67fea9.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+58/228 Analyzing instagram_058_353770c7.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+59/228 Analyzing instagram_059_0c4f680b.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+60/228 Analyzing instagram_060_f1c50035.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+61/228 Analyzing instagram_061_afb5be70.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+62/228 Analyzing instagram_062_1a78ec34.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+63/228 Analyzing instagram_063_fa2579f0.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+64/228 Analyzing instagram_064_f9e45722.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+65/228 Analyzing instagram_065_0664cd42.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+66/228 Analyzing instagram_066_aae9a674.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+67/228 Analyzing instagram_067_88f11460.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+68/228 Analyzing instagram_068_1eb25d98.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+69/228 Analyzing instagram_069_9fc3b4f9.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+70/228 Analyzing instagram_070_e4c354ae.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+71/228 Analyzing instagram_071_5fded020.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+72/228 Analyzing instagram_072_35e6ef32.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+73/228 Analyzing instagram_073_cb0e0f9a.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+74/228 Analyzing instagram_074_d3b2825c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+75/228 Analyzing instagram_075_d1267016.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+76/228 Analyzing instagram_076_7f2f912f.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+77/228 Analyzing instagram_077_1fe89cde.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+78/228 Analyzing instagram_078_835a5a74.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+79/228 Analyzing instagram_079_88f0e4ee.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+80/228 Analyzing instagram_080_829f8b33.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+81/228 Analyzing instagram_081_be3f49bc.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+82/228 Analyzing instagram_082_a1a7d49c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+83/228 Analyzing instagram_083_afdbc6c9.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+84/228 Analyzing instagram_084_fcc56726.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+85/228 Analyzing instagram_085_7bc5c3b3.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+86/228 Analyzing instagram_086_e3c67138.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+87/228 Analyzing instagram_087_82f2c772.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+88/228 Analyzing instagram_088_7755cf45.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+89/228 Analyzing instagram_089_59d6c0f4.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+90/228 Analyzing instagram_090_70f940a2.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+91/228 Analyzing instagram_091_e0c644dc.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+92/228 Analyzing instagram_092_fb40c4c9.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+93/228 Analyzing instagram_093_775040f5.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+94/228 Analyzing instagram_094_ef271f22.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+95/228 Analyzing instagram_095_14bd3ca3.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+96/228 Analyzing instagram_096_eac583bf.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+97/228 Analyzing instagram_097_e79aef0f.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+98/228 Analyzing instagram_098_9a134913.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+99/228 Analyzing instagram_099_e77ffc9c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+100/228 Analyzing instagram_100_7470867d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+101/228 Analyzing instagram_101_1745768c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+102/228 Analyzing instagram_102_d9071866.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+103/228 Analyzing instagram_103_e79ca075.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+104/228 Analyzing instagram_104_e64c0477.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+105/228 Analyzing instagram_105_17854e7c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+106/228 Analyzing instagram_106_2119d4db.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+107/228 Analyzing instagram_107_9bd159ad.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+108/228 Analyzing instagram_108_1a82bf23.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+109/228 Analyzing instagram_109_ab7ab5a9.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+110/228 Analyzing instagram_110_6b6f4c51.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+111/228 Analyzing instagram_111_5830ae16.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+112/228 Analyzing instagram_112_bec924e3.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+113/228 Analyzing instagram_113_d85fb24e.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+114/228 Analyzing instagram_114_201b12c2.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+115/228 Analyzing instagram_115_6a933360.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+116/228 Analyzing instagram_116_a5627fca.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+117/228 Analyzing instagram_117_ed0569c4.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+118/228 Analyzing instagram_118_86ba49c9.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+119/228 Analyzing instagram_119_a7b05929.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+120/228 Analyzing instagram_120_051046d1.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+121/228 Analyzing instagram_121_ed574a83.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+122/228 Analyzing instagram_122_684fa233.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+123/228 Analyzing instagram_123_f8fcc196.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+124/228 Analyzing instagram_124_0a846dc4.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+125/228 Analyzing instagram_125_24756065.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+126/228 Analyzing instagram_126_ebc987b2.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+127/228 Analyzing instagram_127_2d969eea.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+128/228 Analyzing instagram_128_f9c445bd.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+129/228 Analyzing instagram_129_5b89038c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+130/228 Analyzing instagram_130_95c1af3c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+131/228 Analyzing instagram_131_ebc635dd.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+132/228 Analyzing instagram_132_30b4908d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+133/228 Analyzing instagram_133_9a7a58cb.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+134/228 Analyzing instagram_134_cebae026.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+135/228 Analyzing instagram_135_a8aeae75.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+136/228 Analyzing instagram_136_eaaa9d6a.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+137/228 Analyzing instagram_137_bb3a055e.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+138/228 Analyzing instagram_138_16b0972b.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+139/228 Analyzing instagram_139_008c330d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+140/228 Analyzing instagram_140_757a247d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+141/228 Analyzing instagram_141_cb0a2f7e.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+142/228 Analyzing instagram_142_60f9717d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+143/228 Analyzing instagram_143_3b1945eb.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+144/228 Analyzing instagram_144_996688f6.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+145/228 Analyzing instagram_145_0c9b2bd1.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+146/228 Analyzing instagram_146_75b2ac84.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+147/228 Analyzing instagram_147_043cd954.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+148/228 Analyzing instagram_148_7e7500bb.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+149/228 Analyzing instagram_149_9c7f7c44.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+150/228 Analyzing instagram_150_f4a68dba.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+151/228 Analyzing instagram_151_33f05957.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+152/228 Analyzing instagram_152_bca47c04.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+153/228 Analyzing instagram_153_6674b75b.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+154/228 Analyzing instagram_154_7c858533.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+155/228 Analyzing instagram_155_9d8d393f.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+156/228 Analyzing instagram_156_25f484e0.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+157/228 Analyzing instagram_157_67da373d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+158/228 Analyzing instagram_158_f622fda2.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+159/228 Analyzing instagram_159_c194dd9a.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+160/228 Analyzing instagram_160_9c5743e0.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+161/228 Analyzing instagram_161_d34ccd08.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+162/228 Analyzing instagram_162_d42ca19f.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+163/228 Analyzing instagram_163_5f76cb58.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+164/228 Analyzing instagram_164_e8000312.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+165/228 Analyzing instagram_165_3b677991.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+166/228 Analyzing instagram_166_78f3b88e.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+167/228 Analyzing instagram_167_1e97ef5f.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+168/228 Analyzing instagram_168_6f69d075.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+169/228 Analyzing instagram_169_ee9d9ffa.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+170/228 Analyzing instagram_170_210d8de8.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+171/228 Analyzing instagram_171_af03d149.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+172/228 Analyzing instagram_172_7ba0b41c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+173/228 Analyzing instagram_173_5cabb804.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+174/228 Analyzing instagram_174_2d8f71ed.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+175/228 Analyzing instagram_175_b1489202.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+176/228 Analyzing instagram_176_50c6386a.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+177/228 Analyzing instagram_177_2e48beb3.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+178/228 Analyzing instagram_178_4d05904b.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+179/228 Analyzing instagram_179_1185fb7e.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+180/228 Analyzing instagram_180_719b659e.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+181/228 Analyzing instagram_181_9052a1b2.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+182/228 Analyzing instagram_182_4b4d3d39.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+183/228 Analyzing instagram_183_04906b2d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+184/228 Analyzing instagram_184_6362d5e6.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+185/228 Analyzing instagram_185_b4a2c792.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+186/228 Analyzing instagram_186_aae4c04b.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+187/228 Analyzing instagram_187_a202eb31.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+188/228 Analyzing instagram_188_e30a33b1.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+189/228 Analyzing instagram_189_9ef018e6.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+190/228 Analyzing instagram_190_c516bb01.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+191/228 Analyzing instagram_191_b561a1dd.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+192/228 Analyzing instagram_192_fce8f1bf.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+193/228 Analyzing instagram_193_baf9e2f8.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+194/228 Analyzing instagram_194_b23978e1.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+195/228 Analyzing instagram_195_97d6a76c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+196/228 Analyzing instagram_196_7688b84e.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+197/228 Analyzing instagram_197_d4017686.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+198/228 Analyzing instagram_198_910889f2.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+199/228 Analyzing instagram_199_f1835084.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+200/228 Analyzing instagram_200_f5b8ba79.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+201/228 Analyzing instagram_201_67b3f409.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+202/228 Analyzing instagram_202_3a075b01.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+203/228 Analyzing instagram_203_731833b1.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+204/228 Analyzing instagram_204_f26e8560.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+205/228 Analyzing instagram_205_3b2d04a0.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+206/228 Analyzing instagram_206_69098751.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+207/228 Analyzing instagram_207_41c3fdc1.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+208/228 Analyzing instagram_208_b8d64365.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+209/228 Analyzing instagram_209_3b5467d6.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+210/228 Analyzing instagram_210_155b453e.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+211/228 Analyzing instagram_211_c01eb10f.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+212/228 Analyzing instagram_212_e5b9d321.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+213/228 Analyzing instagram_213_d1f521e6.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+214/228 Analyzing instagram_214_d4e58cc3.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+215/228 Analyzing instagram_215_7c36fb08.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+216/228 Analyzing instagram_216_b756ee2d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+217/228 Analyzing instagram_217_fcd2896d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+218/228 Analyzing instagram_218_8a155fdb.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+219/228 Analyzing instagram_219_f5fc5643.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+220/228 Analyzing instagram_220_f37c154d.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+221/228 Analyzing instagram_221_d58430c7.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+222/228 Analyzing instagram_222_6f1718f5.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+223/228 Analyzing instagram_223_bc30d0ea.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+224/228 Analyzing instagram_224_a3a24150.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+225/228 Analyzing instagram_225_5f0ac18c.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+226/228 Analyzing instagram_226_53e42db4.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+227/228 Analyzing instagram_227_29a7ea64.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+228/228 Analyzing instagram_228_5c8f46ac.jpg...   ⚠ Error analyzing image: "Could not resolve authentication method. Expected either api_key or auth_token to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+→ custom
+
+======================================================================
+Distribution Results:
+======================================================================
+Thema & Karakter Taarten: 0 images
+Verjaardagstaarten: 0 images
+Baby & Gender Reveal: 0 images
+Maatwerk Taarten: 228 images
+
+Total: 228 images
+
+✓ Saved to categories_full.json
+✓ Saved to categories.json
+
+======================================================================
+✓ Re-categorization complete!
+======================================================================

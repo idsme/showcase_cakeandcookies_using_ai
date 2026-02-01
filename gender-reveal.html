@@ -117,20 +117,23 @@
             color: var(--hot-pink);
         }
         
-        .nav-cta {
-            background: linear-gradient(135deg, var(--hot-pink), var(--deep-pink));
-            color: white;
-            padding: 0.75rem 1.5rem;
+                .nav-cta {
+            background: var(--hot-pink);
+            color: white !important;
+            padding: 0.6rem 1.5rem;
             border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: all 0.3s ease;
-            font-size: 0.95rem;
+            font-weight: 600 !important;
+            transition: all 0.3s ease !important;
         }
         
+        .nav-cta:hover {
+            background: var(--deep-pink);
+            transform: translateY(-2px);
+        }
+        
+        .nav-cta::after {
+            display: none !important;
+        }
         .nav-cta:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 20px rgba(233, 30, 140, 0.3);
@@ -153,7 +156,7 @@
         .page-subtitle {
             font-family: var(--font-accent);
             font-size: 2rem;
-            color: var(--hot-pink);
+            color: var(--gold);
             margin-bottom: 1rem;
         }
         
@@ -365,27 +368,32 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
+        <!-- Navigation -->
+    <nav id="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
                 <div class="logo-icon">
                     <i class="ph-fill ph-cake"></i>
                 </div>
-                <span class="logo-text">Taart en Koek</span>
+                <span class="logo-text">Taart <span>&</span> Koek</span>
             </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#home">Home</a></li>
                 <li><a href="character-cakes.html">Thema Taarten</a></li>
                 <li><a href="gender-reveal.html">Gender Reveal</a></li>
                 <li><a href="birthday-cakes.html">Verjaardagstaarten</a></li>
                 <li><a href="custom-cakes.html">Maatwerk</a></li>
                 <li><a href="index.html#pricing">Prijzen</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <a href="https://wa.me/31634191203?text=Normale bestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" class="btn btn-primary" target="_blank">
+                        <i class="ph-fill ph-whatsapp-logo"></i>
+                        Bestel Via WhatsApp
+                    </a>
             </ul>
-            <a href="https://wa.me/31634191203?text=Ik%20wil%20graag%20een%20taart%20bestellen" class="nav-cta" target="_blank">
-                <i class="ph-fill ph-whatsapp-logo"></i>
-                Bestellen
-            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -421,10 +429,10 @@
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_065_0664cd42.jpg" data-likes="15" onclick="handleTileClick(this)">
-                <img src="images/instagram_065_0664cd42.jpg" alt="Baby & Gender Reveal 4" loading="lazy">
+            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_058_353770c7.jpg" data-likes="32" onclick="handleTileClick(this)">
+                <img src="images/instagram_058_353770c7.jpg" alt="Baby & Gender Reveal 4" loading="lazy">
                 <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 15 likes
+                    <i class="ph-fill ph-heart"></i> 32 likes
                 </div>
             </div>
 
@@ -435,108 +443,52 @@
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_091_e0c644dc.jpg" data-likes="10" onclick="handleTileClick(this)">
-                <img src="images/instagram_091_e0c644dc.jpg" alt="Baby & Gender Reveal 6" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 10 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_098_9a134913.jpg" data-likes="19" onclick="handleTileClick(this)">
-                <img src="images/instagram_098_9a134913.jpg" alt="Baby & Gender Reveal 7" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 19 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_108_1a82bf23.jpg" data-likes="19" onclick="handleTileClick(this)">
-                <img src="images/instagram_108_1a82bf23.jpg" alt="Baby & Gender Reveal 8" loading="lazy">
+                <img src="images/instagram_108_1a82bf23.jpg" alt="Baby & Gender Reveal 6" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 19 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_124_0a846dc4.jpg" data-likes="12" onclick="handleTileClick(this)">
-                <img src="images/instagram_124_0a846dc4.jpg" alt="Baby & Gender Reveal 9" loading="lazy">
+                <img src="images/instagram_124_0a846dc4.jpg" alt="Baby & Gender Reveal 7" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 12 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_142_60f9717d.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_142_60f9717d.jpg" alt="Baby & Gender Reveal 10" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 14 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_159_c194dd9a.jpg" data-likes="16" onclick="handleTileClick(this)">
-                <img src="images/instagram_159_c194dd9a.jpg" alt="Baby & Gender Reveal 11" loading="lazy">
+                <img src="images/instagram_159_c194dd9a.jpg" alt="Baby & Gender Reveal 8" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 16 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_166_78f3b88e.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_166_78f3b88e.jpg" alt="Baby & Gender Reveal 12" loading="lazy">
+            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_185_b4a2c792.jpg" data-likes="21" onclick="handleTileClick(this)">
+                <img src="images/instagram_185_b4a2c792.jpg" alt="Baby & Gender Reveal 9" loading="lazy">
                 <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 17 likes
+                    <i class="ph-fill ph-heart"></i> 21 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_198_910889f2.jpg" data-likes="13" onclick="handleTileClick(this)">
-                <img src="images/instagram_198_910889f2.jpg" alt="Baby & Gender Reveal 13" loading="lazy">
+                <img src="images/instagram_198_910889f2.jpg" alt="Baby & Gender Reveal 10" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 13 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_200_f5b8ba79.jpg" data-likes="22" onclick="handleTileClick(this)">
-                <img src="images/instagram_200_f5b8ba79.jpg" alt="Baby & Gender Reveal 14" loading="lazy">
+                <img src="images/instagram_200_f5b8ba79.jpg" alt="Baby & Gender Reveal 11" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 22 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_205_3b2d04a0.jpg" data-likes="16" onclick="handleTileClick(this)">
-                <img src="images/instagram_205_3b2d04a0.jpg" alt="Baby & Gender Reveal 15" loading="lazy">
+            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_217_fcd2896d.jpg" data-likes="6" onclick="handleTileClick(this)">
+                <img src="images/instagram_217_fcd2896d.jpg" alt="Baby & Gender Reveal 12" loading="lazy">
                 <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 16 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_206_69098751.jpg" data-likes="11" onclick="handleTileClick(this)">
-                <img src="images/instagram_206_69098751.jpg" alt="Baby & Gender Reveal 16" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 11 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_207_41c3fdc1.jpg" data-likes="8" onclick="handleTileClick(this)">
-                <img src="images/instagram_207_41c3fdc1.jpg" alt="Baby & Gender Reveal 17" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 8 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_209_3b5467d6.jpg" data-likes="15" onclick="handleTileClick(this)">
-                <img src="images/instagram_209_3b5467d6.jpg" alt="Baby & Gender Reveal 18" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 15 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_215_7c36fb08.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_215_7c36fb08.jpg" alt="Baby & Gender Reveal 19" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 17 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Baby & Gender Reveal" data-image="instagram_220_f37c154d.jpg" data-likes="10" onclick="handleTileClick(this)">
-                <img src="images/instagram_220_f37c154d.jpg" alt="Baby & Gender Reveal 20" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 10 likes
+                    <i class="ph-fill ph-heart"></i> 6 likes
                 </div>
             </div>
         </div>

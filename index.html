@@ -878,9 +878,33 @@
             grid-template-columns: 1fr auto;
             align-items: center;
             padding: 1.25rem 1.5rem;
-            border-radius: 0px;
+            border-radius: 8px;
             transition: all 0.3s ease;
             border-bottom: 2px solid var(--blush-pink);
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .pricing-row:hover {
+            background: var(--blush-pink);
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(233, 30, 140, 0.15);
+        }
+        
+        .pricing-row.clickable::after {
+            content: '→';
+            position: absolute;
+            right: 1rem;
+            opacity: 0;
+            transition: all 0.3s ease;
+            color: var(--hot-pink);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .pricing-row.clickable:hover::after {
+            opacity: 1;
+            right: 0.5rem;
         }
         
         .pricing-item {
@@ -1688,30 +1712,31 @@
                     <h3>Onze Taarten</h3>
                     <p>Inclusief premium ingrediënten & basis decoratie, vanaf prijzen:</p>
                 </div>
-                <div class="pricing-row">
-                    <span class="pricing-item"> Diverse soorten sweets zoals cakepops, (mini) cupcakes, donuts, brownies 
+                <div class="pricing-row clickable" onclick="window.open('https://wa.me/31634191203?text=Hallo!%20Ik%20ben%20ge%C3%AFnteresseerd%20in%20diverse%20sweets%20zoals%20cakepops,%20mini%20cupcakes,%20donuts%20of%20brownies.%20Kunnen%20jullie%20mij%20meer%20informatie%20geven?', '_blank')">
+                    <span class="pricing-item">Diverse Sweets<small>Cakepops, mini cupcakes, donuts, brownies</small></span>
+                    <span class="pricing-price">Op aanvraag</span>
                 </div>
-                <div class="pricing-row">
+                <div class="pricing-row clickable" onclick="window.open('https://wa.me/31634191203?text=Hallo!%20Ik%20ben%20ge%C3%AFnteresseerd%20in%20een%20Ronde%20Taart%20voor%2010%20personen%20vanaf%20%E2%82%AC55.%20Kunnen%20jullie%20mij%20meer%20informatie%20geven?', '_blank')">
                     <span class="pricing-item">Ronde Taart<small>10 personen</small></span>
                     <span class="pricing-price">va. €55</span>
                 </div>
-                <div class="pricing-row">
+                <div class="pricing-row clickable" onclick="window.open('https://wa.me/31634191203?text=Hallo!%20Ik%20ben%20ge%C3%AFnteresseerd%20in%20een%20Ronde%20Taart%20voor%2015%20personen%20vanaf%20%E2%82%AC82,50.%20Kunnen%20jullie%20mij%20meer%20informatie%20geven?', '_blank')">
                     <span class="pricing-item">Ronde Taart<small>15 personen</small></span>
                     <span class="pricing-price">va. €82,50</span>
                 </div>
-                <div class="pricing-row">
+                <div class="pricing-row clickable" onclick="window.open('https://wa.me/31634191203?text=Hallo!%20Ik%20ben%20ge%C3%AFnteresseerd%20in%20een%20Ronde%20Taart%20-%201%20Laag%20voor%2020%20personen%20vanaf%20%E2%82%AC110.%20Kunnen%20jullie%20mij%20meer%20informatie%20geven?', '_blank')">
                     <span class="pricing-item">Ronde Taart - 1 Laag<small>20 personen</small></span>
                     <span class="pricing-price">va. €110</span>
                 </div>
-                <div class="pricing-row">
+                <div class="pricing-row clickable" onclick="window.open('https://wa.me/31634191203?text=Hallo!%20Ik%20ben%20ge%C3%AFnteresseerd%20in%20een%20Ronde%20Taart%20-%202%20Lagen%20voor%2020%20personen%20vanaf%20%E2%82%AC125.%20Kunnen%20jullie%20mij%20meer%20informatie%20geven?', '_blank')">
                     <span class="pricing-item">Ronde Taart - 2 Lagen<small>20 personen</small></span>
                     <span class="pricing-price">va. €125</span>
                 </div>
-                <div class="pricing-row">
-                    <span class="pricing-item">Ronde taart - 2 lagen<small> 25 personen</small></span>
+                <div class="pricing-row clickable" onclick="window.open('https://wa.me/31634191203?text=Hallo!%20Ik%20ben%20ge%C3%AFnteresseerd%20in%20een%20Ronde%20Taart%20-%202%20Lagen%20voor%2025%20personen%20vanaf%20%E2%82%AC152,50.%20Kunnen%20jullie%20mij%20meer%20informatie%20geven?', '_blank')">
+                    <span class="pricing-item">Ronde Taart - 2 Lagen<small>25 personen</small></span>
                     <span class="pricing-price">va. €152,50</span> 
                 </div>
-                <div class="pricing-row">
+                <div class="pricing-row clickable" onclick="window.open('https://wa.me/31634191203?text=Hallo!%20Ik%20ben%20ge%C3%AFnteresseerd%20in%20een%20Ronde%20Taart%20-%202%20Lagen%20voor%2030%20personen%20vanaf%20%E2%82%AC180.%20Kunnen%20jullie%20mij%20meer%20informatie%20geven?', '_blank')">
                     <span class="pricing-item">Ronde Taart - 2 Lagen<small>30 personen</small></span>
                     <span class="pricing-price">va. €180</span>
                 </div>

@@ -117,20 +117,23 @@
             color: var(--hot-pink);
         }
         
-        .nav-cta {
-            background: linear-gradient(135deg, var(--hot-pink), var(--deep-pink));
-            color: white;
-            padding: 0.75rem 1.5rem;
+                .nav-cta {
+            background: var(--hot-pink);
+            color: white !important;
+            padding: 0.6rem 1.5rem;
             border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: all 0.3s ease;
-            font-size: 0.95rem;
+            font-weight: 600 !important;
+            transition: all 0.3s ease !important;
         }
         
+        .nav-cta:hover {
+            background: var(--deep-pink);
+            transform: translateY(-2px);
+        }
+        
+        .nav-cta::after {
+            display: none !important;
+        }
         .nav-cta:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 20px rgba(233, 30, 140, 0.3);
@@ -153,7 +156,7 @@
         .page-subtitle {
             font-family: var(--font-accent);
             font-size: 2rem;
-            color: var(--hot-pink);
+            color: var(--gold);
             margin-bottom: 1rem;
         }
         
@@ -365,27 +368,32 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav>
+        <!-- Navigation -->
+    <nav id="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
                 <div class="logo-icon">
                     <i class="ph-fill ph-cake"></i>
                 </div>
-                <span class="logo-text">Taart en Koek</span>
+                <span class="logo-text">Taart <span>&</span> Koek</span>
             </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#home">Home</a></li>
                 <li><a href="character-cakes.html">Thema Taarten</a></li>
                 <li><a href="gender-reveal.html">Gender Reveal</a></li>
                 <li><a href="birthday-cakes.html">Verjaardagstaarten</a></li>
                 <li><a href="custom-cakes.html">Maatwerk</a></li>
                 <li><a href="index.html#pricing">Prijzen</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <a href="https://wa.me/31634191203?text=Normale bestelling:%20Ik%20heb%20dringend%20een%20taart%20nodig" class="btn btn-primary" target="_blank">
+                        <i class="ph-fill ph-whatsapp-logo"></i>
+                        Bestel Via WhatsApp
+                    </a>
             </ul>
-            <a href="https://wa.me/31634191203?text=Ik%20wil%20graag%20een%20taart%20bestellen" class="nav-cta" target="_blank">
-                <i class="ph-fill ph-whatsapp-logo"></i>
-                Bestellen
-            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
@@ -400,1060 +408,682 @@
     <section class="gallery-section">
         <div class="gallery-grid">
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_001_71a0517d.jpg" data-likes="0" onclick="handleTileClick(this)">
-                <img src="images/instagram_001_71a0517d.jpg" alt="Verjaardagstaarten 1" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 0 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_002_63c867ce.jpg" data-likes="4" onclick="handleTileClick(this)">
-                <img src="images/instagram_002_63c867ce.jpg" alt="Verjaardagstaarten 2" loading="lazy">
+                <img src="images/instagram_002_63c867ce.jpg" alt="Verjaardagstaarten 1" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 4 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_003_32f1fe3b.jpg" data-likes="5" onclick="handleTileClick(this)">
-                <img src="images/instagram_003_32f1fe3b.jpg" alt="Verjaardagstaarten 3" loading="lazy">
+                <img src="images/instagram_003_32f1fe3b.jpg" alt="Verjaardagstaarten 2" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 5 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_007_49e39381.jpg" data-likes="5" onclick="handleTileClick(this)">
-                <img src="images/instagram_007_49e39381.jpg" alt="Verjaardagstaarten 4" loading="lazy">
+                <img src="images/instagram_007_49e39381.jpg" alt="Verjaardagstaarten 3" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 5 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_008_ffdedfce.jpg" data-likes="0" onclick="handleTileClick(this)">
-                <img src="images/instagram_008_ffdedfce.jpg" alt="Verjaardagstaarten 5" loading="lazy">
+                <img src="images/instagram_008_ffdedfce.jpg" alt="Verjaardagstaarten 4" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 0 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_010_4d3a41f8.jpg" data-likes="9" onclick="handleTileClick(this)">
-                <img src="images/instagram_010_4d3a41f8.jpg" alt="Verjaardagstaarten 6" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 9 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_011_c1f8525b.jpg" data-likes="11" onclick="handleTileClick(this)">
-                <img src="images/instagram_011_c1f8525b.jpg" alt="Verjaardagstaarten 7" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 11 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_017_a62913f2.jpg" data-likes="4" onclick="handleTileClick(this)">
-                <img src="images/instagram_017_a62913f2.jpg" alt="Verjaardagstaarten 8" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 4 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_018_6b70979a.jpg" data-likes="8" onclick="handleTileClick(this)">
-                <img src="images/instagram_018_6b70979a.jpg" alt="Verjaardagstaarten 9" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 8 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_019_a528e930.jpg" data-likes="7" onclick="handleTileClick(this)">
-                <img src="images/instagram_019_a528e930.jpg" alt="Verjaardagstaarten 10" loading="lazy">
+                <img src="images/instagram_019_a528e930.jpg" alt="Verjaardagstaarten 5" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 7 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_020_8bafaa52.jpg" data-likes="10" onclick="handleTileClick(this)">
-                <img src="images/instagram_020_8bafaa52.jpg" alt="Verjaardagstaarten 11" loading="lazy">
+                <img src="images/instagram_020_8bafaa52.jpg" alt="Verjaardagstaarten 6" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 10 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_021_8afb6bf5.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_021_8afb6bf5.jpg" alt="Verjaardagstaarten 12" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 17 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_022_7efdc97c.jpg" data-likes="6" onclick="handleTileClick(this)">
-                <img src="images/instagram_022_7efdc97c.jpg" alt="Verjaardagstaarten 13" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 6 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_023_8bc66ef3.jpg" data-likes="13" onclick="handleTileClick(this)">
-                <img src="images/instagram_023_8bc66ef3.jpg" alt="Verjaardagstaarten 14" loading="lazy">
+                <img src="images/instagram_023_8bc66ef3.jpg" alt="Verjaardagstaarten 7" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 13 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_024_dfc28bf8.jpg" data-likes="8" onclick="handleTileClick(this)">
-                <img src="images/instagram_024_dfc28bf8.jpg" alt="Verjaardagstaarten 15" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 8 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_025_2cf63b8f.jpg" data-likes="12" onclick="handleTileClick(this)">
-                <img src="images/instagram_025_2cf63b8f.jpg" alt="Verjaardagstaarten 16" loading="lazy">
+                <img src="images/instagram_025_2cf63b8f.jpg" alt="Verjaardagstaarten 8" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 12 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_026_957e36af.jpg" data-likes="8" onclick="handleTileClick(this)">
-                <img src="images/instagram_026_957e36af.jpg" alt="Verjaardagstaarten 17" loading="lazy">
+                <img src="images/instagram_026_957e36af.jpg" alt="Verjaardagstaarten 9" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 8 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_027_173e2e7e.jpg" data-likes="11" onclick="handleTileClick(this)">
-                <img src="images/instagram_027_173e2e7e.jpg" alt="Verjaardagstaarten 18" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 11 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_028_45fc22ab.jpg" data-likes="13" onclick="handleTileClick(this)">
-                <img src="images/instagram_028_45fc22ab.jpg" alt="Verjaardagstaarten 19" loading="lazy">
+                <img src="images/instagram_028_45fc22ab.jpg" alt="Verjaardagstaarten 10" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 13 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_030_fb8c540e.jpg" data-likes="16" onclick="handleTileClick(this)">
-                <img src="images/instagram_030_fb8c540e.jpg" alt="Verjaardagstaarten 20" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 16 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_031_8002cad9.jpg" data-likes="9" onclick="handleTileClick(this)">
-                <img src="images/instagram_031_8002cad9.jpg" alt="Verjaardagstaarten 21" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 9 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_032_56250d24.jpg" data-likes="15" onclick="handleTileClick(this)">
-                <img src="images/instagram_032_56250d24.jpg" alt="Verjaardagstaarten 22" loading="lazy">
+                <img src="images/instagram_032_56250d24.jpg" alt="Verjaardagstaarten 11" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 15 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_038_8f523505.jpg" data-likes="12" onclick="handleTileClick(this)">
-                <img src="images/instagram_038_8f523505.jpg" alt="Verjaardagstaarten 23" loading="lazy">
+                <img src="images/instagram_038_8f523505.jpg" alt="Verjaardagstaarten 12" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 12 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_039_80030ce2.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_039_80030ce2.jpg" alt="Verjaardagstaarten 24" loading="lazy">
+                <img src="images/instagram_039_80030ce2.jpg" alt="Verjaardagstaarten 13" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_040_008c941c.jpg" data-likes="26" onclick="handleTileClick(this)">
-                <img src="images/instagram_040_008c941c.jpg" alt="Verjaardagstaarten 25" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 26 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_043_43ec1dc6.jpg" data-likes="12" onclick="handleTileClick(this)">
-                <img src="images/instagram_043_43ec1dc6.jpg" alt="Verjaardagstaarten 26" loading="lazy">
+                <img src="images/instagram_043_43ec1dc6.jpg" alt="Verjaardagstaarten 14" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 12 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_044_215009a3.jpg" data-likes="11" onclick="handleTileClick(this)">
-                <img src="images/instagram_044_215009a3.jpg" alt="Verjaardagstaarten 27" loading="lazy">
+                <img src="images/instagram_044_215009a3.jpg" alt="Verjaardagstaarten 15" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 11 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_045_6d24b448.jpg" data-likes="12" onclick="handleTileClick(this)">
-                <img src="images/instagram_045_6d24b448.jpg" alt="Verjaardagstaarten 28" loading="lazy">
+                <img src="images/instagram_045_6d24b448.jpg" alt="Verjaardagstaarten 16" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 12 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_046_9adc8b8e.jpg" data-likes="15" onclick="handleTileClick(this)">
-                <img src="images/instagram_046_9adc8b8e.jpg" alt="Verjaardagstaarten 29" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 15 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_047_c65ec791.jpg" data-likes="11" onclick="handleTileClick(this)">
-                <img src="images/instagram_047_c65ec791.jpg" alt="Verjaardagstaarten 30" loading="lazy">
+                <img src="images/instagram_047_c65ec791.jpg" alt="Verjaardagstaarten 17" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 11 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_055_bc8e855f.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_055_bc8e855f.jpg" alt="Verjaardagstaarten 31" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 17 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_056_ae2f22a0.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_056_ae2f22a0.jpg" alt="Verjaardagstaarten 32" loading="lazy">
+                <img src="images/instagram_055_bc8e855f.jpg" alt="Verjaardagstaarten 18" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_057_eb67fea9.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_057_eb67fea9.jpg" alt="Verjaardagstaarten 33" loading="lazy">
+                <img src="images/instagram_057_eb67fea9.jpg" alt="Verjaardagstaarten 19" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 14 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_058_353770c7.jpg" data-likes="32" onclick="handleTileClick(this)">
-                <img src="images/instagram_058_353770c7.jpg" alt="Verjaardagstaarten 34" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 32 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_059_0c4f680b.jpg" data-likes="22" onclick="handleTileClick(this)">
-                <img src="images/instagram_059_0c4f680b.jpg" alt="Verjaardagstaarten 35" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 22 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_060_f1c50035.jpg" data-likes="16" onclick="handleTileClick(this)">
-                <img src="images/instagram_060_f1c50035.jpg" alt="Verjaardagstaarten 36" loading="lazy">
+                <img src="images/instagram_060_f1c50035.jpg" alt="Verjaardagstaarten 20" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 16 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_061_afb5be70.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_061_afb5be70.jpg" alt="Verjaardagstaarten 37" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 14 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_062_1a78ec34.jpg" data-likes="20" onclick="handleTileClick(this)">
-                <img src="images/instagram_062_1a78ec34.jpg" alt="Verjaardagstaarten 38" loading="lazy">
+                <img src="images/instagram_062_1a78ec34.jpg" alt="Verjaardagstaarten 21" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 20 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_063_fa2579f0.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_063_fa2579f0.jpg" alt="Verjaardagstaarten 39" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 14 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_064_f9e45722.jpg" data-likes="11" onclick="handleTileClick(this)">
-                <img src="images/instagram_064_f9e45722.jpg" alt="Verjaardagstaarten 40" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 11 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_066_aae9a674.jpg" data-likes="12" onclick="handleTileClick(this)">
-                <img src="images/instagram_066_aae9a674.jpg" alt="Verjaardagstaarten 41" loading="lazy">
+                <img src="images/instagram_066_aae9a674.jpg" alt="Verjaardagstaarten 22" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 12 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_067_88f11460.jpg" data-likes="20" onclick="handleTileClick(this)">
-                <img src="images/instagram_067_88f11460.jpg" alt="Verjaardagstaarten 42" loading="lazy">
+                <img src="images/instagram_067_88f11460.jpg" alt="Verjaardagstaarten 23" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 20 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_068_1eb25d98.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_068_1eb25d98.jpg" alt="Verjaardagstaarten 43" loading="lazy">
+                <img src="images/instagram_068_1eb25d98.jpg" alt="Verjaardagstaarten 24" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 14 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_069_9fc3b4f9.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_069_9fc3b4f9.jpg" alt="Verjaardagstaarten 44" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 14 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_070_e4c354ae.jpg" data-likes="22" onclick="handleTileClick(this)">
-                <img src="images/instagram_070_e4c354ae.jpg" alt="Verjaardagstaarten 45" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 22 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_071_5fded020.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_071_5fded020.jpg" alt="Verjaardagstaarten 46" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 17 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_072_35e6ef32.jpg" data-likes="10" onclick="handleTileClick(this)">
-                <img src="images/instagram_072_35e6ef32.jpg" alt="Verjaardagstaarten 47" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 10 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_073_cb0e0f9a.jpg" data-likes="16" onclick="handleTileClick(this)">
-                <img src="images/instagram_073_cb0e0f9a.jpg" alt="Verjaardagstaarten 48" loading="lazy">
+                <img src="images/instagram_073_cb0e0f9a.jpg" alt="Verjaardagstaarten 25" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 16 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_074_d3b2825c.jpg" data-likes="13" onclick="handleTileClick(this)">
-                <img src="images/instagram_074_d3b2825c.jpg" alt="Verjaardagstaarten 49" loading="lazy">
+                <img src="images/instagram_074_d3b2825c.jpg" alt="Verjaardagstaarten 26" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 13 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_075_d1267016.jpg" data-likes="19" onclick="handleTileClick(this)">
-                <img src="images/instagram_075_d1267016.jpg" alt="Verjaardagstaarten 50" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 19 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_076_7f2f912f.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_076_7f2f912f.jpg" alt="Verjaardagstaarten 51" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 14 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_077_1fe89cde.jpg" data-likes="19" onclick="handleTileClick(this)">
-                <img src="images/instagram_077_1fe89cde.jpg" alt="Verjaardagstaarten 52" loading="lazy">
+                <img src="images/instagram_075_d1267016.jpg" alt="Verjaardagstaarten 27" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 19 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_079_88f0e4ee.jpg" data-likes="13" onclick="handleTileClick(this)">
-                <img src="images/instagram_079_88f0e4ee.jpg" alt="Verjaardagstaarten 53" loading="lazy">
+                <img src="images/instagram_079_88f0e4ee.jpg" alt="Verjaardagstaarten 28" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 13 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_081_be3f49bc.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_081_be3f49bc.jpg" alt="Verjaardagstaarten 54" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 17 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_082_a1a7d49c.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_082_a1a7d49c.jpg" alt="Verjaardagstaarten 55" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 14 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_083_afdbc6c9.jpg" data-likes="20" onclick="handleTileClick(this)">
-                <img src="images/instagram_083_afdbc6c9.jpg" alt="Verjaardagstaarten 56" loading="lazy">
+                <img src="images/instagram_083_afdbc6c9.jpg" alt="Verjaardagstaarten 29" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 20 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_085_7bc5c3b3.jpg" data-likes="13" onclick="handleTileClick(this)">
-                <img src="images/instagram_085_7bc5c3b3.jpg" alt="Verjaardagstaarten 57" loading="lazy">
+                <img src="images/instagram_085_7bc5c3b3.jpg" alt="Verjaardagstaarten 30" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 13 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_086_e3c67138.jpg" data-likes="23" onclick="handleTileClick(this)">
-                <img src="images/instagram_086_e3c67138.jpg" alt="Verjaardagstaarten 58" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 23 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_088_7755cf45.jpg" data-likes="21" onclick="handleTileClick(this)">
-                <img src="images/instagram_088_7755cf45.jpg" alt="Verjaardagstaarten 59" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 21 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_089_59d6c0f4.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_089_59d6c0f4.jpg" alt="Verjaardagstaarten 60" loading="lazy">
+                <img src="images/instagram_089_59d6c0f4.jpg" alt="Verjaardagstaarten 31" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_090_70f940a2.jpg" data-likes="15" onclick="handleTileClick(this)">
-                <img src="images/instagram_090_70f940a2.jpg" alt="Verjaardagstaarten 61" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 15 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_092_fb40c4c9.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_092_fb40c4c9.jpg" alt="Verjaardagstaarten 62" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 14 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_093_775040f5.jpg" data-likes="15" onclick="handleTileClick(this)">
-                <img src="images/instagram_093_775040f5.jpg" alt="Verjaardagstaarten 63" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 15 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_094_ef271f22.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_094_ef271f22.jpg" alt="Verjaardagstaarten 64" loading="lazy">
+                <img src="images/instagram_094_ef271f22.jpg" alt="Verjaardagstaarten 32" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 14 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_095_14bd3ca3.jpg" data-likes="22" onclick="handleTileClick(this)">
-                <img src="images/instagram_095_14bd3ca3.jpg" alt="Verjaardagstaarten 65" loading="lazy">
+                <img src="images/instagram_095_14bd3ca3.jpg" alt="Verjaardagstaarten 33" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 22 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_096_eac583bf.jpg" data-likes="19" onclick="handleTileClick(this)">
-                <img src="images/instagram_096_eac583bf.jpg" alt="Verjaardagstaarten 66" loading="lazy">
+                <img src="images/instagram_096_eac583bf.jpg" alt="Verjaardagstaarten 34" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 19 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_097_e79aef0f.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_097_e79aef0f.jpg" alt="Verjaardagstaarten 67" loading="lazy">
+                <img src="images/instagram_097_e79aef0f.jpg" alt="Verjaardagstaarten 35" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 14 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_100_7470867d.jpg" data-likes="16" onclick="handleTileClick(this)">
-                <img src="images/instagram_100_7470867d.jpg" alt="Verjaardagstaarten 68" loading="lazy">
+                <img src="images/instagram_100_7470867d.jpg" alt="Verjaardagstaarten 36" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 16 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_101_1745768c.jpg" data-likes="7" onclick="handleTileClick(this)">
-                <img src="images/instagram_101_1745768c.jpg" alt="Verjaardagstaarten 69" loading="lazy">
+                <img src="images/instagram_101_1745768c.jpg" alt="Verjaardagstaarten 37" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 7 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_103_e79ca075.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_103_e79ca075.jpg" alt="Verjaardagstaarten 70" loading="lazy">
+                <img src="images/instagram_103_e79ca075.jpg" alt="Verjaardagstaarten 38" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_104_e64c0477.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_104_e64c0477.jpg" alt="Verjaardagstaarten 71" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 17 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_105_17854e7c.jpg" data-likes="9" onclick="handleTileClick(this)">
-                <img src="images/instagram_105_17854e7c.jpg" alt="Verjaardagstaarten 72" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 9 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_106_2119d4db.jpg" data-likes="19" onclick="handleTileClick(this)">
-                <img src="images/instagram_106_2119d4db.jpg" alt="Verjaardagstaarten 73" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 19 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_107_9bd159ad.jpg" data-likes="15" onclick="handleTileClick(this)">
-                <img src="images/instagram_107_9bd159ad.jpg" alt="Verjaardagstaarten 74" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 15 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_110_6b6f4c51.jpg" data-likes="24" onclick="handleTileClick(this)">
-                <img src="images/instagram_110_6b6f4c51.jpg" alt="Verjaardagstaarten 75" loading="lazy">
+                <img src="images/instagram_110_6b6f4c51.jpg" alt="Verjaardagstaarten 39" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 24 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_111_5830ae16.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_111_5830ae16.jpg" alt="Verjaardagstaarten 76" loading="lazy">
+                <img src="images/instagram_111_5830ae16.jpg" alt="Verjaardagstaarten 40" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_116_a5627fca.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_116_a5627fca.jpg" alt="Verjaardagstaarten 77" loading="lazy">
+                <img src="images/instagram_116_a5627fca.jpg" alt="Verjaardagstaarten 41" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_117_ed0569c4.jpg" data-likes="10" onclick="handleTileClick(this)">
-                <img src="images/instagram_117_ed0569c4.jpg" alt="Verjaardagstaarten 78" loading="lazy">
+                <img src="images/instagram_117_ed0569c4.jpg" alt="Verjaardagstaarten 42" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 10 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_118_86ba49c9.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_118_86ba49c9.jpg" alt="Verjaardagstaarten 79" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 17 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_119_a7b05929.jpg" data-likes="18" onclick="handleTileClick(this)">
-                <img src="images/instagram_119_a7b05929.jpg" alt="Verjaardagstaarten 80" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 18 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_120_051046d1.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_120_051046d1.jpg" alt="Verjaardagstaarten 81" loading="lazy">
+                <img src="images/instagram_120_051046d1.jpg" alt="Verjaardagstaarten 43" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_121_ed574a83.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_121_ed574a83.jpg" alt="Verjaardagstaarten 82" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 14 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_122_684fa233.jpg" data-likes="20" onclick="handleTileClick(this)">
-                <img src="images/instagram_122_684fa233.jpg" alt="Verjaardagstaarten 83" loading="lazy">
+                <img src="images/instagram_122_684fa233.jpg" alt="Verjaardagstaarten 44" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 20 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_123_f8fcc196.jpg" data-likes="12" onclick="handleTileClick(this)">
-                <img src="images/instagram_123_f8fcc196.jpg" alt="Verjaardagstaarten 84" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 12 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_125_24756065.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_125_24756065.jpg" alt="Verjaardagstaarten 85" loading="lazy">
+                <img src="images/instagram_125_24756065.jpg" alt="Verjaardagstaarten 45" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_126_ebc987b2.jpg" data-likes="19" onclick="handleTileClick(this)">
-                <img src="images/instagram_126_ebc987b2.jpg" alt="Verjaardagstaarten 86" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 19 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_127_2d969eea.jpg" data-likes="19" onclick="handleTileClick(this)">
-                <img src="images/instagram_127_2d969eea.jpg" alt="Verjaardagstaarten 87" loading="lazy">
+                <img src="images/instagram_126_ebc987b2.jpg" alt="Verjaardagstaarten 46" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 19 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_128_f9c445bd.jpg" data-likes="30" onclick="handleTileClick(this)">
-                <img src="images/instagram_128_f9c445bd.jpg" alt="Verjaardagstaarten 88" loading="lazy">
+                <img src="images/instagram_128_f9c445bd.jpg" alt="Verjaardagstaarten 47" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 30 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_129_5b89038c.jpg" data-likes="20" onclick="handleTileClick(this)">
-                <img src="images/instagram_129_5b89038c.jpg" alt="Verjaardagstaarten 89" loading="lazy">
+            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_132_30b4908d.jpg" data-likes="16" onclick="handleTileClick(this)">
+                <img src="images/instagram_132_30b4908d.jpg" alt="Verjaardagstaarten 48" loading="lazy">
                 <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 20 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_130_95c1af3c.jpg" data-likes="20" onclick="handleTileClick(this)">
-                <img src="images/instagram_130_95c1af3c.jpg" alt="Verjaardagstaarten 90" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 20 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_131_ebc635dd.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_131_ebc635dd.jpg" alt="Verjaardagstaarten 91" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 14 likes
+                    <i class="ph-fill ph-heart"></i> 16 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_133_9a7a58cb.jpg" data-likes="11" onclick="handleTileClick(this)">
-                <img src="images/instagram_133_9a7a58cb.jpg" alt="Verjaardagstaarten 92" loading="lazy">
+                <img src="images/instagram_133_9a7a58cb.jpg" alt="Verjaardagstaarten 49" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 11 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_134_cebae026.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_134_cebae026.jpg" alt="Verjaardagstaarten 93" loading="lazy">
+                <img src="images/instagram_134_cebae026.jpg" alt="Verjaardagstaarten 50" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_136_eaaa9d6a.jpg" data-likes="12" onclick="handleTileClick(this)">
-                <img src="images/instagram_136_eaaa9d6a.jpg" alt="Verjaardagstaarten 94" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 12 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_137_bb3a055e.jpg" data-likes="11" onclick="handleTileClick(this)">
-                <img src="images/instagram_137_bb3a055e.jpg" alt="Verjaardagstaarten 95" loading="lazy">
+                <img src="images/instagram_137_bb3a055e.jpg" alt="Verjaardagstaarten 51" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 11 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_139_008c330d.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_139_008c330d.jpg" alt="Verjaardagstaarten 96" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 17 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_140_757a247d.jpg" data-likes="9" onclick="handleTileClick(this)">
-                <img src="images/instagram_140_757a247d.jpg" alt="Verjaardagstaarten 97" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 9 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_141_cb0a2f7e.jpg" data-likes="11" onclick="handleTileClick(this)">
-                <img src="images/instagram_141_cb0a2f7e.jpg" alt="Verjaardagstaarten 98" loading="lazy">
+                <img src="images/instagram_141_cb0a2f7e.jpg" alt="Verjaardagstaarten 52" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 11 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_143_3b1945eb.jpg" data-likes="18" onclick="handleTileClick(this)">
-                <img src="images/instagram_143_3b1945eb.jpg" alt="Verjaardagstaarten 99" loading="lazy">
+                <img src="images/instagram_143_3b1945eb.jpg" alt="Verjaardagstaarten 53" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 18 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_144_996688f6.jpg" data-likes="12" onclick="handleTileClick(this)">
-                <img src="images/instagram_144_996688f6.jpg" alt="Verjaardagstaarten 100" loading="lazy">
+                <img src="images/instagram_144_996688f6.jpg" alt="Verjaardagstaarten 54" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 12 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_145_0c9b2bd1.jpg" data-likes="9" onclick="handleTileClick(this)">
-                <img src="images/instagram_145_0c9b2bd1.jpg" alt="Verjaardagstaarten 101" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 9 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_146_75b2ac84.jpg" data-likes="14" onclick="handleTileClick(this)">
-                <img src="images/instagram_146_75b2ac84.jpg" alt="Verjaardagstaarten 102" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 14 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_147_043cd954.jpg" data-likes="13" onclick="handleTileClick(this)">
-                <img src="images/instagram_147_043cd954.jpg" alt="Verjaardagstaarten 103" loading="lazy">
+                <img src="images/instagram_147_043cd954.jpg" alt="Verjaardagstaarten 55" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 13 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_148_7e7500bb.jpg" data-likes="20" onclick="handleTileClick(this)">
-                <img src="images/instagram_148_7e7500bb.jpg" alt="Verjaardagstaarten 104" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 20 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_149_9c7f7c44.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_149_9c7f7c44.jpg" alt="Verjaardagstaarten 105" loading="lazy">
+                <img src="images/instagram_149_9c7f7c44.jpg" alt="Verjaardagstaarten 56" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_150_f4a68dba.jpg" data-likes="10" onclick="handleTileClick(this)">
-                <img src="images/instagram_150_f4a68dba.jpg" alt="Verjaardagstaarten 106" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 10 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_151_33f05957.jpg" data-likes="9" onclick="handleTileClick(this)">
-                <img src="images/instagram_151_33f05957.jpg" alt="Verjaardagstaarten 107" loading="lazy">
+                <img src="images/instagram_151_33f05957.jpg" alt="Verjaardagstaarten 57" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 9 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_152_bca47c04.jpg" data-likes="20" onclick="handleTileClick(this)">
-                <img src="images/instagram_152_bca47c04.jpg" alt="Verjaardagstaarten 108" loading="lazy">
+                <img src="images/instagram_152_bca47c04.jpg" alt="Verjaardagstaarten 58" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 20 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_153_6674b75b.jpg" data-likes="12" onclick="handleTileClick(this)">
-                <img src="images/instagram_153_6674b75b.jpg" alt="Verjaardagstaarten 109" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 12 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_154_7c858533.jpg" data-likes="13" onclick="handleTileClick(this)">
-                <img src="images/instagram_154_7c858533.jpg" alt="Verjaardagstaarten 110" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 13 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_155_9d8d393f.jpg" data-likes="9" onclick="handleTileClick(this)">
-                <img src="images/instagram_155_9d8d393f.jpg" alt="Verjaardagstaarten 111" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 9 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_156_25f484e0.jpg" data-likes="12" onclick="handleTileClick(this)">
-                <img src="images/instagram_156_25f484e0.jpg" alt="Verjaardagstaarten 112" loading="lazy">
+                <img src="images/instagram_153_6674b75b.jpg" alt="Verjaardagstaarten 59" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 12 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_157_67da373d.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_157_67da373d.jpg" alt="Verjaardagstaarten 113" loading="lazy">
+                <img src="images/instagram_157_67da373d.jpg" alt="Verjaardagstaarten 60" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_158_f622fda2.jpg" data-likes="15" onclick="handleTileClick(this)">
-                <img src="images/instagram_158_f622fda2.jpg" alt="Verjaardagstaarten 114" loading="lazy">
+                <img src="images/instagram_158_f622fda2.jpg" alt="Verjaardagstaarten 61" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 15 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_160_9c5743e0.jpg" data-likes="12" onclick="handleTileClick(this)">
-                <img src="images/instagram_160_9c5743e0.jpg" alt="Verjaardagstaarten 115" loading="lazy">
+                <img src="images/instagram_160_9c5743e0.jpg" alt="Verjaardagstaarten 62" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 12 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_161_d34ccd08.jpg" data-likes="18" onclick="handleTileClick(this)">
-                <img src="images/instagram_161_d34ccd08.jpg" alt="Verjaardagstaarten 116" loading="lazy">
+                <img src="images/instagram_161_d34ccd08.jpg" alt="Verjaardagstaarten 63" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 18 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_162_d42ca19f.jpg" data-likes="13" onclick="handleTileClick(this)">
-                <img src="images/instagram_162_d42ca19f.jpg" alt="Verjaardagstaarten 117" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 13 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_163_5f76cb58.jpg" data-likes="18" onclick="handleTileClick(this)">
-                <img src="images/instagram_163_5f76cb58.jpg" alt="Verjaardagstaarten 118" loading="lazy">
+                <img src="images/instagram_163_5f76cb58.jpg" alt="Verjaardagstaarten 64" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 18 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_164_e8000312.jpg" data-likes="20" onclick="handleTileClick(this)">
-                <img src="images/instagram_164_e8000312.jpg" alt="Verjaardagstaarten 119" loading="lazy">
+                <img src="images/instagram_164_e8000312.jpg" alt="Verjaardagstaarten 65" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 20 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_165_3b677991.jpg" data-likes="22" onclick="handleTileClick(this)">
-                <img src="images/instagram_165_3b677991.jpg" alt="Verjaardagstaarten 120" loading="lazy">
+                <img src="images/instagram_165_3b677991.jpg" alt="Verjaardagstaarten 66" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 22 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_167_1e97ef5f.jpg" data-likes="16" onclick="handleTileClick(this)">
-                <img src="images/instagram_167_1e97ef5f.jpg" alt="Verjaardagstaarten 121" loading="lazy">
+                <img src="images/instagram_167_1e97ef5f.jpg" alt="Verjaardagstaarten 67" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 16 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_168_6f69d075.jpg" data-likes="18" onclick="handleTileClick(this)">
-                <img src="images/instagram_168_6f69d075.jpg" alt="Verjaardagstaarten 122" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 18 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_169_ee9d9ffa.jpg" data-likes="11" onclick="handleTileClick(this)">
-                <img src="images/instagram_169_ee9d9ffa.jpg" alt="Verjaardagstaarten 123" loading="lazy">
+                <img src="images/instagram_169_ee9d9ffa.jpg" alt="Verjaardagstaarten 68" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 11 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_170_210d8de8.jpg" data-likes="9" onclick="handleTileClick(this)">
-                <img src="images/instagram_170_210d8de8.jpg" alt="Verjaardagstaarten 124" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 9 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_171_af03d149.jpg" data-likes="19" onclick="handleTileClick(this)">
-                <img src="images/instagram_171_af03d149.jpg" alt="Verjaardagstaarten 125" loading="lazy">
+                <img src="images/instagram_171_af03d149.jpg" alt="Verjaardagstaarten 69" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 19 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_172_7ba0b41c.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_172_7ba0b41c.jpg" alt="Verjaardagstaarten 126" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 17 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_173_5cabb804.jpg" data-likes="24" onclick="handleTileClick(this)">
-                <img src="images/instagram_173_5cabb804.jpg" alt="Verjaardagstaarten 127" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 24 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_174_2d8f71ed.jpg" data-likes="16" onclick="handleTileClick(this)">
-                <img src="images/instagram_174_2d8f71ed.jpg" alt="Verjaardagstaarten 128" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 16 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_176_50c6386a.jpg" data-likes="21" onclick="handleTileClick(this)">
-                <img src="images/instagram_176_50c6386a.jpg" alt="Verjaardagstaarten 129" loading="lazy">
+                <img src="images/instagram_176_50c6386a.jpg" alt="Verjaardagstaarten 70" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 21 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_177_2e48beb3.jpg" data-likes="18" onclick="handleTileClick(this)">
-                <img src="images/instagram_177_2e48beb3.jpg" alt="Verjaardagstaarten 130" loading="lazy">
+                <img src="images/instagram_177_2e48beb3.jpg" alt="Verjaardagstaarten 71" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 18 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_178_4d05904b.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_178_4d05904b.jpg" alt="Verjaardagstaarten 131" loading="lazy">
+                <img src="images/instagram_178_4d05904b.jpg" alt="Verjaardagstaarten 72" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_181_9052a1b2.jpg" data-likes="21" onclick="handleTileClick(this)">
-                <img src="images/instagram_181_9052a1b2.jpg" alt="Verjaardagstaarten 132" loading="lazy">
+                <img src="images/instagram_181_9052a1b2.jpg" alt="Verjaardagstaarten 73" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 21 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_182_4b4d3d39.jpg" data-likes="15" onclick="handleTileClick(this)">
-                <img src="images/instagram_182_4b4d3d39.jpg" alt="Verjaardagstaarten 133" loading="lazy">
+                <img src="images/instagram_182_4b4d3d39.jpg" alt="Verjaardagstaarten 74" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 15 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_183_04906b2d.jpg" data-likes="19" onclick="handleTileClick(this)">
-                <img src="images/instagram_183_04906b2d.jpg" alt="Verjaardagstaarten 134" loading="lazy">
+                <img src="images/instagram_183_04906b2d.jpg" alt="Verjaardagstaarten 75" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 19 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_184_6362d5e6.jpg" data-likes="18" onclick="handleTileClick(this)">
-                <img src="images/instagram_184_6362d5e6.jpg" alt="Verjaardagstaarten 135" loading="lazy">
+                <img src="images/instagram_184_6362d5e6.jpg" alt="Verjaardagstaarten 76" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 18 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_185_b4a2c792.jpg" data-likes="21" onclick="handleTileClick(this)">
-                <img src="images/instagram_185_b4a2c792.jpg" alt="Verjaardagstaarten 136" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 21 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_186_aae4c04b.jpg" data-likes="21" onclick="handleTileClick(this)">
-                <img src="images/instagram_186_aae4c04b.jpg" alt="Verjaardagstaarten 137" loading="lazy">
+                <img src="images/instagram_186_aae4c04b.jpg" alt="Verjaardagstaarten 77" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 21 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_187_a202eb31.jpg" data-likes="13" onclick="handleTileClick(this)">
-                <img src="images/instagram_187_a202eb31.jpg" alt="Verjaardagstaarten 138" loading="lazy">
+                <img src="images/instagram_187_a202eb31.jpg" alt="Verjaardagstaarten 78" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 13 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_189_9ef018e6.jpg" data-likes="27" onclick="handleTileClick(this)">
-                <img src="images/instagram_189_9ef018e6.jpg" alt="Verjaardagstaarten 139" loading="lazy">
+                <img src="images/instagram_189_9ef018e6.jpg" alt="Verjaardagstaarten 79" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 27 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_190_c516bb01.jpg" data-likes="15" onclick="handleTileClick(this)">
-                <img src="images/instagram_190_c516bb01.jpg" alt="Verjaardagstaarten 140" loading="lazy">
+                <img src="images/instagram_190_c516bb01.jpg" alt="Verjaardagstaarten 80" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 15 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_192_fce8f1bf.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_192_fce8f1bf.jpg" alt="Verjaardagstaarten 141" loading="lazy">
+                <img src="images/instagram_192_fce8f1bf.jpg" alt="Verjaardagstaarten 81" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_193_baf9e2f8.jpg" data-likes="15" onclick="handleTileClick(this)">
-                <img src="images/instagram_193_baf9e2f8.jpg" alt="Verjaardagstaarten 142" loading="lazy">
+                <img src="images/instagram_193_baf9e2f8.jpg" alt="Verjaardagstaarten 82" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 15 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_194_b23978e1.jpg" data-likes="23" onclick="handleTileClick(this)">
-                <img src="images/instagram_194_b23978e1.jpg" alt="Verjaardagstaarten 143" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 23 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_195_97d6a76c.jpg" data-likes="21" onclick="handleTileClick(this)">
-                <img src="images/instagram_195_97d6a76c.jpg" alt="Verjaardagstaarten 144" loading="lazy">
+                <img src="images/instagram_195_97d6a76c.jpg" alt="Verjaardagstaarten 83" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 21 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_196_7688b84e.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_196_7688b84e.jpg" alt="Verjaardagstaarten 145" loading="lazy">
+                <img src="images/instagram_196_7688b84e.jpg" alt="Verjaardagstaarten 84" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_197_d4017686.jpg" data-likes="21" onclick="handleTileClick(this)">
-                <img src="images/instagram_197_d4017686.jpg" alt="Verjaardagstaarten 146" loading="lazy">
+                <img src="images/instagram_197_d4017686.jpg" alt="Verjaardagstaarten 85" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 21 likes
-                </div>
-            </div>
-
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_199_f1835084.jpg" data-likes="16" onclick="handleTileClick(this)">
-                <img src="images/instagram_199_f1835084.jpg" alt="Verjaardagstaarten 147" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 16 likes
                 </div>
             </div>
 
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_201_67b3f409.jpg" data-likes="21" onclick="handleTileClick(this)">
-                <img src="images/instagram_201_67b3f409.jpg" alt="Verjaardagstaarten 148" loading="lazy">
+                <img src="images/instagram_201_67b3f409.jpg" alt="Verjaardagstaarten 86" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 21 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_202_3a075b01.jpg" data-likes="26" onclick="handleTileClick(this)">
-                <img src="images/instagram_202_3a075b01.jpg" alt="Verjaardagstaarten 149" loading="lazy">
-                <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 26 likes
-                </div>
-            </div>
-
             <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_203_731833b1.jpg" data-likes="17" onclick="handleTileClick(this)">
-                <img src="images/instagram_203_731833b1.jpg" alt="Verjaardagstaarten 150" loading="lazy">
+                <img src="images/instagram_203_731833b1.jpg" alt="Verjaardagstaarten 87" loading="lazy">
                 <div class="likes-overlay">
                     <i class="ph-fill ph-heart"></i> 17 likes
                 </div>
             </div>
 
-            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_204_f26e8560.jpg" data-likes="12" onclick="handleTileClick(this)">
-                <img src="images/instagram_204_f26e8560.jpg" alt="Verjaardagstaarten 151" loading="lazy">
+            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_205_3b2d04a0.jpg" data-likes="16" onclick="handleTileClick(this)">
+                <img src="images/instagram_205_3b2d04a0.jpg" alt="Verjaardagstaarten 88" loading="lazy">
                 <div class="likes-overlay">
-                    <i class="ph-fill ph-heart"></i> 12 likes
+                    <i class="ph-fill ph-heart"></i> 16 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_206_69098751.jpg" data-likes="11" onclick="handleTileClick(this)">
+                <img src="images/instagram_206_69098751.jpg" alt="Verjaardagstaarten 89" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 11 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_209_3b5467d6.jpg" data-likes="15" onclick="handleTileClick(this)">
+                <img src="images/instagram_209_3b5467d6.jpg" alt="Verjaardagstaarten 90" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 15 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_213_d1f521e6.jpg" data-likes="9" onclick="handleTileClick(this)">
+                <img src="images/instagram_213_d1f521e6.jpg" alt="Verjaardagstaarten 91" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 9 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_216_b756ee2d.jpg" data-likes="10" onclick="handleTileClick(this)">
+                <img src="images/instagram_216_b756ee2d.jpg" alt="Verjaardagstaarten 92" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 10 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_218_8a155fdb.jpg" data-likes="7" onclick="handleTileClick(this)">
+                <img src="images/instagram_218_8a155fdb.jpg" alt="Verjaardagstaarten 93" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 7 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_221_d58430c7.jpg" data-likes="13" onclick="handleTileClick(this)">
+                <img src="images/instagram_221_d58430c7.jpg" alt="Verjaardagstaarten 94" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 13 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_222_6f1718f5.jpg" data-likes="9" onclick="handleTileClick(this)">
+                <img src="images/instagram_222_6f1718f5.jpg" alt="Verjaardagstaarten 95" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 9 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_223_bc30d0ea.jpg" data-likes="6" onclick="handleTileClick(this)">
+                <img src="images/instagram_223_bc30d0ea.jpg" alt="Verjaardagstaarten 96" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 6 likes
+                </div>
+            </div>
+
+            <div class="gallery-item" data-theme="Verjaardagstaarten" data-image="instagram_227_29a7ea64.jpg" data-likes="11" onclick="handleTileClick(this)">
+                <img src="images/instagram_227_29a7ea64.jpg" alt="Verjaardagstaarten 97" loading="lazy">
+                <div class="likes-overlay">
+                    <i class="ph-fill ph-heart"></i> 11 likes
                 </div>
             </div>
         </div>
