@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cookies
+  namespace: cookies
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  tls:
+    - hosts:
+        - cookies.acmelabs.nl
+      secretName: cookies-tls
+  rules:
+    - host: cookies.acmelabs.nl
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: cookies
+                port:
+                  number: 80
