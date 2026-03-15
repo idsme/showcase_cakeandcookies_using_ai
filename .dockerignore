@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+.gitignore
+.idea
+.claude
+*.md
+*.html
+*.MD
+taart-en-koek-ai-native.jsx
+PRD_Taart_en_Koek.txt
+images
