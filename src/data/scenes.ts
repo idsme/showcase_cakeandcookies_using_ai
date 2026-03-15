@@ -54,7 +54,7 @@ export const SCENES: Record<SceneId, SceneData> = {
       { quote: "Onze gender reveal taart was een groot succes! Iedereen was verbaasd over hoe mooi én lekker de taart was.", name: "Alize", occasion: "Gender Reveal" },
       { quote: "De Paw Patrol taart voor mijn zoontje was fantastisch! De details waren ongelooflijk.", name: "Marcus", occasion: "Thema Taart" },
     ],
-    urgency: null,
+
     ctaSection: { title: "Jouw droomtaart begint hier", sub: "Vertel ons over je feest en wij doen de rest" },
   },
 
@@ -107,7 +107,7 @@ export const SCENES: Record<SceneId, SceneData> = {
       { quote: "De taart was absoluut prachtig en smaakte nog beter dan het eruitzag! Perfect voor onze dochter.", name: "Sophie", occasion: "Sweet 16" },
       { quote: "Mijn moeder werd 80 en de bloementaart was prachtig. Iedereen wilde weten waar die vandaan kwam!", name: "Fatima", occasion: "80ste verjaardag" },
     ],
-    urgency: null,
+
     ctaSection: { title: "Wanneer is het feest?", sub: "Bestel minimaal 3 dagen van tevoren voor het beste resultaat" },
   },
 
@@ -157,7 +157,7 @@ export const SCENES: Record<SceneId, SceneData> = {
       { quote: "De Oh Baby taart was precies wat ik in gedachten had. Prachtige pastelkleuren en heerlijke vanille.", name: "Naomi", occasion: "Babyshower" },
       { quote: "Het moment dat we de taart aansneden en de roze vulling zagen... onvergetelijk!", name: "Daan & Lisa", occasion: "Gender Reveal" },
     ],
-    urgency: null,
+
     ctaSection: { title: "Wanneer is de uitgerekende datum?", sub: "Plan je babyshower taart ruim van tevoren" },
   },
 
@@ -210,55 +210,6 @@ export const SCENES: Record<SceneId, SceneData> = {
       { quote: "Een Pokémon taart besteld en het leek alsof Pikachu uit de taart sprong. Geweldig!", name: "Dennis", occasion: "Pokémon – 8 jaar" },
       { quote: "Nijntje taart voor de eerste verjaardag. Zo schattig! Geen fondant, heerlijk!", name: "Lotte", occasion: "Nijntje – 1 jaar" },
     ],
-    urgency: null,
     ctaSection: { title: "Welk thema wordt het?", sub: "Stuur je idee of een foto via WhatsApp — wij doen de rest" },
-  },
-
-  rush: {
-    accent: "#FF5252",
-    accentSoft: "#FFF0F0",
-    gold: "#C9A86A",
-    bg: "#FFFAFA",
-    heroBg: "linear-gradient(135deg, #FFFAFA 0%, #FFE8E8 50%, #FFF5F0 100%)",
-    hero: {
-      badge: "⚡ Spoedbestelling",
-      script: "Vergeten? Geen paniek!",
-      title: "Morgen al",
-      titleSpan: "een taart nodig?",
-      sub: "Het overkomt de beste. WhatsApp ons direct en we kijken wat er op korte termijn mogelijk is.",
-      cta: "⚡ WhatsApp Spoed",
-    },
-    stats: [
-      { num: "24-48u", label: "Snelste levertijd" },
-      { num: "Direct", label: "WhatsApp reactie" },
-      { num: "€10", label: "Spoedtoeslag" },
-    ],
-    values: [
-      { icon: "⏰", title: "Snelle reactie", desc: "WhatsApp ons en we reageren direct." },
-      { icon: "🎂", title: "Zelfde kwaliteit", desc: "Spoed = niet minder kwaliteit. Altijd handgemaakt." },
-      { icon: "📍", title: "Ophalen Nesselande", desc: "Snel ophalen op afgesproken tijd." },
-    ],
-    gallery: [
-      { img: `${IMG}/hart-cake-taart.jpeg`, name: "Harttaart", tag: "Snel leverbaar" },
-      { img: `${IMG}/mile-stone-meisje.jpg`, name: "Elegant", tag: "Binnen 48u" },
-      { img: `${IMG}/mile-stone-woman.jpeg`, name: "Bloemen", tag: "Populaire keuze" },
-      { img: `${IMG}/theme-cake-nijntje.jpg`, name: "Nijntje", tag: "Kids favoriet" },
-    ],
-    pricing: {
-      title: "Spoedprijzen",
-      sub: "Reguliere prijs + €10 spoedtoeslag",
-      rows: [
-        { item: "Bento – SPOED", detail: "1-2 personen", price: "€40", highlight: true },
-        { item: "Ronde Taart – SPOED", detail: "10 personen", price: "va. €65" },
-        { item: "Ronde Taart – SPOED", detail: "15 personen", price: "va. €92,50" },
-      ],
-      note: "Spoedtoeslag €10. Beschikbaarheid afhankelijk van planning.",
-    },
-    testimonials: [
-      { quote: "Vergeten te bestellen — binnen 24 uur een prachtige taart. Redder in nood!", name: "Karin", occasion: "Spoedbestelling" },
-      { quote: "Zondagochtend gebeld, maandagmiddag opgehaald. Ongelooflijk!", name: "Thomas", occasion: "Last-minute" },
-    ],
-    urgency: { icon: "🚨", text: "WhatsApp nu voor beschikbaarheid vandaag/morgen", sub: "Hoe eerder je belt, hoe meer opties" },
-    ctaSection: { title: "Elke minuut telt!", sub: "Stuur nu een WhatsApp — we kijken direct wat er kan" },
   },
 };

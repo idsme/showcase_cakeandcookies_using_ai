@@ -9,7 +9,6 @@ const SCENE_LABELS: Record<Exclude<SceneId, "default">, string> = {
   birthday: "verjaardagstaarten",
   baby: "babyshower & gender reveal",
   theme: "themataarten",
-  rush: "een spoedbestelling",
 };
 
 export function useScene() {
@@ -51,7 +50,7 @@ export function useScene() {
         setLog((prev) => [
           ...prev,
           { r: "user", t: text },
-          { r: "ai", t: "Klik op een categorie of typ: 'verjaardagstaart', 'babyshower', 'Paw Patrol', of 'spoed'." },
+          { r: "ai", t: "Klik op een categorie of typ: 'verjaardagstaart', 'babyshower', of 'Paw Patrol'." },
         ]);
       }
     },

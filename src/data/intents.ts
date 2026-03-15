@@ -13,8 +13,4 @@ export const INTENTS: IntentRule[] = [
     keywords: ["thema", "paw patrol", "pokemon", "nijntje", "frozen", "karakter", "marvel", "peppa", "mario", "disney", "pikachu", "held"],
     scenario: "theme",
   },
-  {
-    keywords: ["spoed", "morgen", "vandaag", "haast", "snel", "rush", "last minute", "vergeten", "dringend", "urgent", "direct", "overmorgen"],
-    scenario: "rush",
-  },
 ];

@@ -6,7 +6,6 @@ import { Hero } from "@/components/hero";
 import { SearchBar } from "@/components/search-bar";
 import { CategoryCards } from "@/components/category-cards";
 import { TipBanner } from "@/components/tip-banner";
-import { UrgencyBanner } from "@/components/urgency-banner";
 import { ValuesSection } from "@/components/values-section";
 import { Gallery } from "@/components/gallery";
 import { PricingTable } from "@/components/pricing-table";
@@ -31,7 +30,6 @@ export default function Home() {
         <SearchBar sceneData={sceneData} input={ctx.input} setInput={ctx.setInput} log={ctx.log} submit={ctx.submit} show={show} />
         <CategoryCards scene={scene} sceneData={sceneData} respond={ctx.respond} show={show} />
         <TipBanner scene={scene} sceneData={sceneData} showTip={ctx.showTip} show={show} />
-        <UrgencyBanner sceneData={sceneData} show={show} />
         <ValuesSection scene={scene} sceneData={sceneData} show={show} />
         <Gallery scene={scene} sceneData={sceneData} show={show} />
         <PricingTable scene={scene} sceneData={sceneData} show={show} />

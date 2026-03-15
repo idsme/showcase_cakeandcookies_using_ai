@@ -9,7 +9,6 @@ const GALLERY_TITLES: Record<SceneId, string> = {
   birthday: "Verjaardagstaarten",
   baby: "Baby & Gender Reveal",
   theme: "Themataarten",
-  rush: "Snel leverbaar",
 };
 
 interface GalleryProps {

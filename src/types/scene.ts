@@ -1,4 +1,4 @@
-export type SceneId = "default" | "birthday" | "baby" | "theme" | "rush";
+export type SceneId = "default" | "birthday" | "baby" | "theme";
 
 export interface HeroContent {
   badge: string;
@@ -46,12 +46,6 @@ export interface Testimonial {
   occasion: string;
 }
 
-export interface UrgencyContent {
-  icon: string;
-  text: string;
-  sub: string;
-}
-
 export interface CtaContent {
   title: string;
   sub: string;
@@ -69,7 +63,6 @@ export interface SceneData {
   gallery: GalleryItem[];
   pricing: PricingContent;
   testimonials: Testimonial[];
-  urgency: UrgencyContent | null;
   ctaSection: CtaContent;
 }
 
