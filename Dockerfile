@@ -22,7 +22,7 @@ RUN bun run build
 # ============================================
 # Stage 3: Production runner (minimal image)
 # ============================================
-FROM oven/bun:1-slim AS runner
+FROM node:20-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
@@ -30,8 +30,8 @@ ENV NEXT_TELEMETRY_DISABLED=1
 ENV HOSTNAME=0.0.0.0
 ENV PORT=3000
 
-RUN groupadd --system --gid 1001 nodejs && \
-    useradd --system --uid 1001 --gid nodejs nextjs
+RUN addgroup --system --gid 1001 nodejs && \
+    adduser --system --uid 1001 nextjs
 
 # Copy the standalone server (includes traced node_modules)
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
@@ -45,4 +45,4 @@ COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 USER nextjs
 EXPOSE 3000
 
-CMD ["bun", "server.js"]
+CMD ["node", "server.js"]
