@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-lato);
+  --font-playfair: var(--font-playfair);
+  --font-montserrat: var(--font-montserrat);
+  --font-script: var(--font-great-vibes);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #4A3428;
+  font-family: var(--font-lato), "Lato", sans-serif;
+  overflow-x: hidden;
+}
